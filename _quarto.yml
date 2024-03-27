@@ -3,11 +3,11 @@ project:
 
 website: 
   page-navigation: true
-  title: "SEFSC Quarto Documentation Theme Homepage" 
+  title: "App Name Documentation"
   site-url: "https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton" 
   repo-url: "https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton"
-  repo-actions: [edit, source, issue]
-  favicon: images/favicon.ico
+  # repo-actions: [edit, source, issue]
+  favicon: images/favicon.png
   
   page-footer:
     right: |
@@ -24,38 +24,68 @@ website:
         \(305\) 361-4200
 
   
+  navbar:
+    background: "#00467F"
+    search: true
+    right:
+      - text: "SEFSC Resources"
+        menu:
+          - href: https://www.fisheries.noaa.gov/contact/southeast-fisheries-science-center
+            text: SEFSC Homepage
+          - href: https://nmfs-opensci.github.io/
+            text: NOAA Fisheries Open Science
+      - text: "Software & Documentation"
+        menu:
+          - href: https://github.com/sefsc
+            text: SEFSC GitHub Organization
+          - href: https://noaa-fisheries-integrated-toolbox.github.io/
+            text: NOAA Fisheries Integrated Toolbox
+      - text: Data Use & Community
+        menu:
+          - href: NMFS Open Science
+            text: https://nmfs-opensci.github.io/
+
+
   sidebar:
-    background: "#D9E3E4"
-    logo: "https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png"
+    background: "#FAFAFA"
+    logo: "https://github.com/MattGrossi-NOAA/documentation-theme-jekyll/blob/main/images/NOAA_FISHERIES_logoV.png?raw=true"
     favicon: images/favicon.ico
     pinned: true
+    title: Insert Your Documentation Site Name <br>
     align: center
     tools: 
       - icon: globe
-        href: https://nmfs-opensci.github.io
-        text: "NMFS Open Science"
+        href: https://www.fisheries.noaa.gov/contact/southeast-fisheries-science-center
+        text: "NOAA Southeast Fisheries Science Center"
       - icon: github
-        href: https://github.com/nmfs-opensci
-        text: "NMFS OpenSci"
+        href: https://github.com/SEFSC # Change to app repo
+        text: "Application Name"
 
     style: "docked"
     search: true
     collapse-level: 1
-    contents:
-      - href: index.qmd
-        text: Home
-      - href: content/add-content.qmd
-        text: Add content
-      - href: content/customizing.qmd
-        text: Customizing
-      - href: content/rendering.qmd
-        text: Rendering
-      - href: content/notebooks.ipynb
-        text: Jupyter Notebook
-      - href: content/code.qmd
-        text: Code in your files
-      - href: content/acknowledgements.qmd
-        text: Acknowledgements
+    contents: auto
+    # contents:
+    #   - section: "Read the Docs"
+    #     contents:
+    #       - href: index.qmd
+    #         text: About
+    #       - href: content/add-content.qmd
+    #         text: User Guide
+    #       - href: 
+    #         text: Release Notes
+    #   - section: "HOWTO: Using the SEFSC Quarto Theme"
+    #     contents:
+    #       - href: content/customizing.qmd
+    #         text: Customizing
+    #       - href: content/rendering.qmd
+    #         text: Rendering
+    #       - href: content/notebooks.ipynb
+    #         text: Jupyter Notebook
+    #       - href: content/code.qmd
+    #         text: Code in your files
+    #       - href: content/acknowledgements.qmd
+    #         text: Acknowledgements
 
 format:
   html:
@@ -64,7 +94,7 @@ format:
       dark: [cosmo, theme-dark.scss]
     code-copy: true
     code-overflow: wrap
-    toc: true
+    toc: false
 
 
 filters:
