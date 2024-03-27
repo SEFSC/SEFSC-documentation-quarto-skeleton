@@ -1,6 +1,6 @@
 ---
-title: "NOAA quarto simple Python"
-subtitle: "A simple Quarto webpage with a book layout with Python code in qmd or Jupyter Notebooks"
+title: "SEFSC Quarto Documentation Theme Homepage"
+subtitle: "This is a placeholder markdown document that will render as the index.html page for the documentation site. Replace content as desired."
 page-layout: full
 ---
 
