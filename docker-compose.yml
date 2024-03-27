@@ -1,4 +1,4 @@
-# To launch this container and enter bash:
+# To launch this container locally and enter bash:
 #
 #     docker-compose run -it quarto bash
 #
@@ -7,6 +7,7 @@
 #     docker-compose up
 #     docker-compose exec quarto bash
 #
+# Running in a Docker container: https://www.youtube.com/watch?v=cJbvcH0JNGA
 # =============================================================================
 
 version: '3.3'
