@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SEFSC Quarto Documentation Theme Homepage - Jupyter Notebook</title>
+<title>App Name Documentation - Jupyter Notebook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -63,9 +63,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/code.html" rel="next">
-<link href="../content/rendering.html" rel="prev">
-<link href="../images/favicon.ico" rel="icon">
+<link href="../content/publishing.html" rel="next">
+<link href="../content/customizing.html" rel="prev">
+<link href="../images/favicon.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -78,11 +78,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -111,16 +111,77 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-sidebar docked nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">App Name Documentation</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sefsc-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">SEFSC Resources</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-sefsc-resources">    
+        <li>
+    <a class="dropdown-item" href="https://www.fisheries.noaa.gov/contact/southeast-fisheries-science-center">
+ <span class="dropdown-text">SEFSC Homepage</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://nmfs-opensci.github.io/">
+ <span class="dropdown-text">NOAA Fisheries Open Science</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-software--documentation" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Software &amp; Documentation</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-software--documentation">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/sefsc">
+ <span class="dropdown-text">SEFSC GitHub Organization</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://noaa-fisheries-integrated-toolbox.github.io/">
+ <span class="dropdown-text">NOAA Fisheries Integrated Toolbox</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-data-use--community" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Data Use &amp; Community</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-data-use--community">    
+        <li>
+    <a class="dropdown-item" href="../NMFS Open Science">
+ <span class="dropdown-text">https://nmfs-opensci.github.io/</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/notebooks.html">Jupyter Notebook</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/acknowledgements.html">Content</a></li><li class="breadcrumb-item"><a href="../content/notebooks.html">Jupyter Notebook</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -130,17 +191,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="https://github.com/MattGrossi-NOAA/documentation-theme-jekyll/blob/main/images/NOAA_FISHERIES_logoV.png?raw=true" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
-      <div class="sidebar-tools-main tools-wide">
-    <a href="https://nmfs-opensci.github.io" title="NMFS Open Science" class="quarto-navigation-tool px-1" aria-label="NMFS Open Science"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/nmfs-opensci" title="NMFS OpenSci" class="quarto-navigation-tool px-1" aria-label="NMFS OpenSci"><i class="bi bi-github"></i></a>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+      <div class="sidebar-tools-main">
+    <a href="https://www.fisheries.noaa.gov/contact/southeast-fisheries-science-center" title="NOAA Southeast Fisheries Science Center" class="quarto-navigation-tool px-1" aria-label="NOAA Southeast Fisheries Science Center"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/SEFSC" title="Application Name" class="quarto-navigation-tool px-1" aria-label="Application Name"><i class="bi bi-github"></i></a>
 </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -150,70 +210,69 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Content</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Home</span></a>
+  <a href="../content/acknowledgements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acknowledgments</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/add-content.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Add content</span></a>
+ <span class="menu-text">Customize</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/code.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rendering with Code</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/customizing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Customizing</span></a>
+ <span class="menu-text">Customization</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/rendering.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Rendering</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/notebooks.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Jupyter Notebook</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/code.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Code in your files</span></a>
+  <a href="../content/publishing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Publishing</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/acknowledgements.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Acknowledgements</span></a>
+  <a href="../content/rendering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rendering</span></a>
   </div>
 </li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#jupyter-notebook-files" id="toc-jupyter-notebook-files" class="nav-link active" data-scroll-target="#jupyter-notebook-files">Jupyter Notebook files</a>
-  <ul class="collapse">
-  <li><a href="#a-plot" id="toc-a-plot" class="nav-link" data-scroll-target="#a-plot">A plot</a></li>
-  <li><a href="#interactive-outputs" id="toc-interactive-outputs" class="nav-link" data-scroll-target="#interactive-outputs">Interactive outputs</a></li>
-  </ul></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.dev/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/blob/main/content/notebooks.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/blob/main/content/notebooks.ipynb" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/acknowledgements.html">Content</a></li><li class="breadcrumb-item"><a href="../content/notebooks.html">Jupyter Notebook</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Jupyter Notebook</h1>
 </div>
@@ -315,7 +374,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
             <style>
-                #map_8e71657ea02bb36437de307ec2e95e8d {
+                #map_86b05b5e0696a6cfcd5fc4255d5e7b4f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -329,14 +388,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <body>
     
     
-            <div class=&quot;folium-map&quot; id=&quot;map_8e71657ea02bb36437de307ec2e95e8d&quot; ></div>
+            <div class=&quot;folium-map&quot; id=&quot;map_86b05b5e0696a6cfcd5fc4255d5e7b4f&quot; ></div>
         
 </body>
 <script>
     
     
-            var map_8e71657ea02bb36437de307ec2e95e8d = L.map(
-                &quot;map_8e71657ea02bb36437de307ec2e95e8d&quot;,
+            var map_86b05b5e0696a6cfcd5fc4255d5e7b4f = L.map(
+                &quot;map_86b05b5e0696a6cfcd5fc4255d5e7b4f&quot;,
                 {
                     center: [45.372, -121.6972],
                     crs: L.CRS.EPSG3857,
@@ -350,91 +409,91 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
         
     
-            var tile_layer_099c4ebb70d00c32499a4e81203bb727 = L.tileLayer(
+            var tile_layer_418357d2ac5db7180686472af8043979 = L.tileLayer(
                 &quot;Stamen Terrain&quot;,
                 {&quot;attribution&quot;: &quot;\u003ca href=https://maps.stamen.com/terrain/Stamen Terrain\u003c/a\u003e&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
         
     
-            tile_layer_099c4ebb70d00c32499a4e81203bb727.addTo(map_8e71657ea02bb36437de307ec2e95e8d);
+            tile_layer_418357d2ac5db7180686472af8043979.addTo(map_86b05b5e0696a6cfcd5fc4255d5e7b4f);
         
     
-            var marker_9d3cd026abf9c5bce01fe174015e638f = L.marker(
+            var marker_5b01cc1f73415cde68f8a2c97ce40a48 = L.marker(
                 [45.3288, -121.6625],
                 {}
-            ).addTo(map_8e71657ea02bb36437de307ec2e95e8d);
+            ).addTo(map_86b05b5e0696a6cfcd5fc4255d5e7b4f);
         
     
-            var icon_ec5d8b41229dc6d8800b2d4d10fdca94 = L.AwesomeMarkers.icon(
+            var icon_53d4d0859b39f65efb1dc9b4f465029f = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;cloud&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
             );
-            marker_9d3cd026abf9c5bce01fe174015e638f.setIcon(icon_ec5d8b41229dc6d8800b2d4d10fdca94);
+            marker_5b01cc1f73415cde68f8a2c97ce40a48.setIcon(icon_53d4d0859b39f65efb1dc9b4f465029f);
         
     
-        var popup_bc72eaaaf8f0d46e9cd41e841868a9fb = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_254a9dd47d8cb313c5044104aeda9b27 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_27bd45d22ff711e893ecd730a63b2690 = $(`<div id=&quot;html_27bd45d22ff711e893ecd730a63b2690&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Mt. Hood Meadows</div>`)[0];
-                popup_bc72eaaaf8f0d46e9cd41e841868a9fb.setContent(html_27bd45d22ff711e893ecd730a63b2690);
+                var html_5766da18ef09d20dd5154b3a13b18ec3 = $(`<div id=&quot;html_5766da18ef09d20dd5154b3a13b18ec3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Mt. Hood Meadows</div>`)[0];
+                popup_254a9dd47d8cb313c5044104aeda9b27.setContent(html_5766da18ef09d20dd5154b3a13b18ec3);
             
         
 
-        marker_9d3cd026abf9c5bce01fe174015e638f.bindPopup(popup_bc72eaaaf8f0d46e9cd41e841868a9fb)
+        marker_5b01cc1f73415cde68f8a2c97ce40a48.bindPopup(popup_254a9dd47d8cb313c5044104aeda9b27)
         ;
 
         
     
     
-            var marker_58ed4b5cd68330c13108ccc0fce9f8b1 = L.marker(
+            var marker_8e8a3ead9b79551998bdc4c06d80aa0e = L.marker(
                 [45.3311, -121.7113],
                 {}
-            ).addTo(map_8e71657ea02bb36437de307ec2e95e8d);
+            ).addTo(map_86b05b5e0696a6cfcd5fc4255d5e7b4f);
         
     
-            var icon_14f5f2d7b9d48737ec25b583288d1a17 = L.AwesomeMarkers.icon(
+            var icon_290647660717e6c22eb8dd22339efc2f = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;info-sign&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;green&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
             );
-            marker_58ed4b5cd68330c13108ccc0fce9f8b1.setIcon(icon_14f5f2d7b9d48737ec25b583288d1a17);
+            marker_8e8a3ead9b79551998bdc4c06d80aa0e.setIcon(icon_290647660717e6c22eb8dd22339efc2f);
         
     
-        var popup_2b87b8b5292cf597c88a49dbb9155079 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_5caad2e124c2357a0091f109b910a4da = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_3f593e8d2ea839d882ab371b6c43e9d8 = $(`<div id=&quot;html_3f593e8d2ea839d882ab371b6c43e9d8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Timberline Lodge</div>`)[0];
-                popup_2b87b8b5292cf597c88a49dbb9155079.setContent(html_3f593e8d2ea839d882ab371b6c43e9d8);
+                var html_f7a601f9a21bca2229471c5dc308ad95 = $(`<div id=&quot;html_f7a601f9a21bca2229471c5dc308ad95&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Timberline Lodge</div>`)[0];
+                popup_5caad2e124c2357a0091f109b910a4da.setContent(html_f7a601f9a21bca2229471c5dc308ad95);
             
         
 
-        marker_58ed4b5cd68330c13108ccc0fce9f8b1.bindPopup(popup_2b87b8b5292cf597c88a49dbb9155079)
+        marker_8e8a3ead9b79551998bdc4c06d80aa0e.bindPopup(popup_5caad2e124c2357a0091f109b910a4da)
         ;
 
         
     
     
-            var marker_2a2e4a45814449758f0332a0778b28e6 = L.marker(
+            var marker_5819376694e9e91d3371325daf784c9f = L.marker(
                 [45.33, -121.6823],
                 {}
-            ).addTo(map_8e71657ea02bb36437de307ec2e95e8d);
+            ).addTo(map_86b05b5e0696a6cfcd5fc4255d5e7b4f);
         
     
-            var icon_a40e0007e946132719431c45fa840e62 = L.AwesomeMarkers.icon(
+            var icon_677404d2fb65e2c34213f50b950257ad = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;info-sign&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
             );
-            marker_2a2e4a45814449758f0332a0778b28e6.setIcon(icon_a40e0007e946132719431c45fa840e62);
+            marker_5819376694e9e91d3371325daf784c9f.setIcon(icon_677404d2fb65e2c34213f50b950257ad);
         
     
-        var popup_1bb87b1cf3923319e077edaf781a2393 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_e3c1c17433989a1c091c86414ac5e81d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_27ae8a9d2f85d79a2f584646f8593da9 = $(`<div id=&quot;html_27ae8a9d2f85d79a2f584646f8593da9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Some Other Location</div>`)[0];
-                popup_1bb87b1cf3923319e077edaf781a2393.setContent(html_27ae8a9d2f85d79a2f584646f8593da9);
+                var html_508299e28d1d92f695871e394e52d7cf = $(`<div id=&quot;html_508299e28d1d92f695871e394e52d7cf&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Some Other Location</div>`)[0];
+                popup_e3c1c17433989a1c091c86414ac5e81d.setContent(html_508299e28d1d92f695871e394e52d7cf);
             
         
 
-        marker_2a2e4a45814449758f0332a0778b28e6.bindPopup(popup_1bb87b1cf3923319e077edaf781a2393)
+        marker_5819376694e9e91d3371325daf784c9f.bindPopup(popup_e3c1c17433989a1c091c86414ac5e81d)
         ;
 
         
@@ -1004,13 +1063,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../content/rendering.html" class="pagination-link" aria-label="Rendering">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Rendering</span>
+      <a href="../content/customizing.html" class="pagination-link" aria-label="Customization">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Customization</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/code.html" class="pagination-link" aria-label="Code in your files">
-        <span class="nav-page-text">Code in your files</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../content/publishing.html" class="pagination-link" aria-label="Publishing">
+        <span class="nav-page-text">Publishing</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1022,7 +1081,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.dev/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/blob/main/content/notebooks.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/blob/main/content/notebooks.ipynb" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    </div>
     <div class="nav-footer-right">
 <p><a href="https://noaa.gov">NOAA</a> <br> <a href="https//fisheries.noaa.gov">NOAA Fisheries</a> <br> <a href="https://www.fisheries.noaa.gov/contact/southeast-fisheries-science-center">Southeast Fisheries Science Center</a></p>
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>. © CC-1.0</p>
