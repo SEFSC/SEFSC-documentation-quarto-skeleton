@@ -7,3 +7,7 @@
 .DS_Store
 /.quarto/
 /_site/
+
+.devcontainer
+.github/dependabot.yml
+jovyan
