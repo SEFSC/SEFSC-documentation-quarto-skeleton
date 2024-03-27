@@ -3,15 +3,26 @@ project:
 
 website: 
   page-navigation: true
-  title: "NOAA quarto simple" 
-  site-url: "https://nmfs-opensci.github.io/NOAA-quarto-simple-python" 
-  repo-url: "https://github.com/nmfs-opensci/NOAA-quarto-simple-python"
+  title: "SEFSC Quarto Documentation Theme Homepage" 
+  site-url: "https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton" 
+  repo-url: "https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton"
   repo-actions: [edit, source, issue]
   favicon: images/favicon.ico
   
   page-footer:
-    right: "This page is built with [Quarto](https://quarto.org/)."
-    left: "&copy; CC-1.0"
+    right: |
+        [NOAA](https://noaa.gov) <br>
+        [NOAA Fisheries](https//fisheries.noaa.gov) <br>
+        [Southeast Fisheries Science Center](https://www.fisheries.noaa.gov/contact/southeast-fisheries-science-center)
+
+        This page is built with [Quarto](https://quarto.org/). &copy; CC-1.0
+    left: |
+        NOAA National Marine Fisheries Service <br>
+        Southeast Fisheries Science Center <br>
+        75 Virginia Beach Drive <br>
+        Miami, FL 33149
+        \(305\) 361-4200
+
   
   sidebar:
     background: "#D9E3E4"
