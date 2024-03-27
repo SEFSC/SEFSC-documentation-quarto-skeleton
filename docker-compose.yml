@@ -1,0 +1,28 @@
+# To launch this container and enter bash:
+#
+#     docker-compose run -it quarto bash
+#
+# or:
+#
+#     docker-compose up
+#     docker-compose exec quarto bash
+#
+# =============================================================================
+
+version: '3.3'
+
+services:
+  quarto:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: quartojupyter:latest
+    container_name: quarto
+    # environment:
+    #   - JUPYTER_ENABLE_LAB=yes
+    stdin_open: true
+    tty: true
+    ports:
+      - 8888:8888
+    volumes:
+      - .:/home
