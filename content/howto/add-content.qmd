@@ -1,5 +1,6 @@
 ---
-title: Customize
+title: Add content
+order: 1
 ---
 
 ## Edit and add your pages
