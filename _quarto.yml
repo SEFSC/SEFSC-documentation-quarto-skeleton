@@ -51,7 +51,6 @@ website:
     logo: "https://github.com/MattGrossi-NOAA/documentation-theme-jekyll/blob/main/images/NOAA_FISHERIES_logoV.png?raw=true"
     favicon: images/favicon.ico
     pinned: true
-    # title: Insert Your Documentation Site Name <br>
     align: center
     tools: 
       - icon: globe
