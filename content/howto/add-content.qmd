@@ -1,6 +1,6 @@
 ---
 title: Add content
-order: 1
+order: 2
 ---
 
 ## Edit and add your pages

@@ -1,6 +1,6 @@
 ---
 title: Rendering with Code
-order: 5
+order: 6
 ---
 
 You can have code Python in your qmd file. You will need to have these installed on your local computer, but presumably you do already if you are adding code to your qmd files.
