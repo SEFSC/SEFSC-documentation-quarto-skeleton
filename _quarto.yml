@@ -51,7 +51,7 @@ website:
     logo: "https://github.com/MattGrossi-NOAA/documentation-theme-jekyll/blob/main/images/NOAA_FISHERIES_logoV.png?raw=true"
     favicon: images/favicon.ico
     pinned: true
-    title: Insert Your Documentation Site Name <br>
+    # title: Insert Your Documentation Site Name <br>
     align: center
     tools: 
       - icon: globe
@@ -63,7 +63,7 @@ website:
 
     style: "docked"
     search: true
-    collapse-level: 1
+    collapse-level: 2
     contents: auto
     # contents:
     #   - section: "Read the Docs"
@@ -73,9 +73,11 @@ website:
     #       - href: content/add-content.qmd
     #         text: User Guide
     #       - href: 
-    # #         text: Release Notes
+    #         text: Release Notes
     #   - section: "HOWTO: Using the SEFSC Quarto Theme"
     #     contents:
+    #       - href: content/add-content.qmd
+    #         text: Adding content
     #       - href: content/customizing.qmd
     #         text: Customizing
     #       - href: content/rendering.qmd
