@@ -1,3 +1,4 @@
 ---
+title: Read the Docs
 order: 1
 ---
