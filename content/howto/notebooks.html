@@ -110,7 +110,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-sidebar docked nav-fixed fullcontent">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -157,17 +157,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
     </ul>
   </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-data-use--community" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Data Use &amp; Community</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-data-use--community">    
-        <li>
-    <a class="dropdown-item" href="../../NMFS Open Science">
- <span class="dropdown-text">https://nmfs-opensci.github.io/</span></a>
-  </li>  
-    </ul>
-  </li>
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -197,9 +186,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <a href="../../index.html" class="sidebar-logo-link">
       <img src="https://github.com/MattGrossi-NOAA/documentation-theme-jekyll/blob/main/images/NOAA_FISHERIES_logoV.png?raw=true" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
-      <div class="sidebar-tools-main">
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://noaa.gov" title="NOAA Home" class="quarto-navigation-tool px-1" aria-label="NOAA Home"><i class="bi bi-house"></i></a>
     <a href="https://www.fisheries.noaa.gov/contact/southeast-fisheries-science-center" title="NOAA Southeast Fisheries Science Center" class="quarto-navigation-tool px-1" aria-label="NOAA Southeast Fisheries Science Center"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/SEFSC" title="Application Name" class="quarto-navigation-tool px-1" aria-label="Application Name"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/SEFSC" title="SEFSC GitHub" class="quarto-navigation-tool px-1" aria-label="SEFSC GitHub"><i class="bi bi-github"></i></a>
 </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -290,7 +280,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#jupyter-notebook-files" id="toc-jupyter-notebook-files" class="nav-link active" data-scroll-target="#jupyter-notebook-files">Jupyter Notebook files</a>
+  <ul class="collapse">
+  <li><a href="#a-plot" id="toc-a-plot" class="nav-link" data-scroll-target="#a-plot">A plot</a></li>
+  <li><a href="#interactive-outputs" id="toc-interactive-outputs" class="nav-link" data-scroll-target="#interactive-outputs">Interactive outputs</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/blob/main/content/howto/notebooks.ipynb" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -396,7 +398,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
             <style>
-                #map_e95ab318166592538133d763e049586c {
+                #map_6946f001b8913c0718df8ba193e292ac {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -410,14 +412,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <body>
     
     
-            <div class=&quot;folium-map&quot; id=&quot;map_e95ab318166592538133d763e049586c&quot; ></div>
+            <div class=&quot;folium-map&quot; id=&quot;map_6946f001b8913c0718df8ba193e292ac&quot; ></div>
         
 </body>
 <script>
     
     
-            var map_e95ab318166592538133d763e049586c = L.map(
-                &quot;map_e95ab318166592538133d763e049586c&quot;,
+            var map_6946f001b8913c0718df8ba193e292ac = L.map(
+                &quot;map_6946f001b8913c0718df8ba193e292ac&quot;,
                 {
                     center: [45.372, -121.6972],
                     crs: L.CRS.EPSG3857,
@@ -431,91 +433,91 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
         
     
-            var tile_layer_e5587c16884b49aadedbe84229523371 = L.tileLayer(
+            var tile_layer_8c6791750e51ee6b73e667dd10d33bf8 = L.tileLayer(
                 &quot;Stamen Terrain&quot;,
                 {&quot;attribution&quot;: &quot;\u003ca href=https://maps.stamen.com/terrain/Stamen Terrain\u003c/a\u003e&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
         
     
-            tile_layer_e5587c16884b49aadedbe84229523371.addTo(map_e95ab318166592538133d763e049586c);
+            tile_layer_8c6791750e51ee6b73e667dd10d33bf8.addTo(map_6946f001b8913c0718df8ba193e292ac);
         
     
-            var marker_d7393e311114515d95884b9138c166b9 = L.marker(
+            var marker_2d2515e6f24949d727454ff70489a4a7 = L.marker(
                 [45.3288, -121.6625],
                 {}
-            ).addTo(map_e95ab318166592538133d763e049586c);
+            ).addTo(map_6946f001b8913c0718df8ba193e292ac);
         
     
-            var icon_b273dbf01c37c996735f71bd7ea477f0 = L.AwesomeMarkers.icon(
+            var icon_eafcef537ca4131ef53032806c8efd11 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;cloud&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
             );
-            marker_d7393e311114515d95884b9138c166b9.setIcon(icon_b273dbf01c37c996735f71bd7ea477f0);
+            marker_2d2515e6f24949d727454ff70489a4a7.setIcon(icon_eafcef537ca4131ef53032806c8efd11);
         
     
-        var popup_730d4c350106bcc5c90b89e91d534e6b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_c0e9250787be1f7fc070b072918c066f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_8fb09d7d2ef514a08d9da6f2b434ba02 = $(`<div id=&quot;html_8fb09d7d2ef514a08d9da6f2b434ba02&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Mt. Hood Meadows</div>`)[0];
-                popup_730d4c350106bcc5c90b89e91d534e6b.setContent(html_8fb09d7d2ef514a08d9da6f2b434ba02);
+                var html_931266a77d46cc98d9ea741a998e1ca8 = $(`<div id=&quot;html_931266a77d46cc98d9ea741a998e1ca8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Mt. Hood Meadows</div>`)[0];
+                popup_c0e9250787be1f7fc070b072918c066f.setContent(html_931266a77d46cc98d9ea741a998e1ca8);
             
         
 
-        marker_d7393e311114515d95884b9138c166b9.bindPopup(popup_730d4c350106bcc5c90b89e91d534e6b)
+        marker_2d2515e6f24949d727454ff70489a4a7.bindPopup(popup_c0e9250787be1f7fc070b072918c066f)
         ;
 
         
     
     
-            var marker_befee4d11a1f75c4c4cce46cf95727a2 = L.marker(
+            var marker_0ceecab170434e34d22ffb2a676bbc33 = L.marker(
                 [45.3311, -121.7113],
                 {}
-            ).addTo(map_e95ab318166592538133d763e049586c);
+            ).addTo(map_6946f001b8913c0718df8ba193e292ac);
         
     
-            var icon_8ef3b653651d170e1c2d62d7da3bb3f0 = L.AwesomeMarkers.icon(
+            var icon_bd0fb7469c65ef3ee9a97bfcf5b16001 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;info-sign&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;green&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
             );
-            marker_befee4d11a1f75c4c4cce46cf95727a2.setIcon(icon_8ef3b653651d170e1c2d62d7da3bb3f0);
+            marker_0ceecab170434e34d22ffb2a676bbc33.setIcon(icon_bd0fb7469c65ef3ee9a97bfcf5b16001);
         
     
-        var popup_974ea2394bc176d322a33233e8ab22ea = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_cc2c6a78ef666ebe8036c497637faae6 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_f3dc595b670af518f4053294bc6aebd3 = $(`<div id=&quot;html_f3dc595b670af518f4053294bc6aebd3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Timberline Lodge</div>`)[0];
-                popup_974ea2394bc176d322a33233e8ab22ea.setContent(html_f3dc595b670af518f4053294bc6aebd3);
+                var html_7b6be5fb6499adb67fd310f12aa4618d = $(`<div id=&quot;html_7b6be5fb6499adb67fd310f12aa4618d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Timberline Lodge</div>`)[0];
+                popup_cc2c6a78ef666ebe8036c497637faae6.setContent(html_7b6be5fb6499adb67fd310f12aa4618d);
             
         
 
-        marker_befee4d11a1f75c4c4cce46cf95727a2.bindPopup(popup_974ea2394bc176d322a33233e8ab22ea)
+        marker_0ceecab170434e34d22ffb2a676bbc33.bindPopup(popup_cc2c6a78ef666ebe8036c497637faae6)
         ;
 
         
     
     
-            var marker_516f36a41b9455c7b54123f9ad133b16 = L.marker(
+            var marker_70cf4557622addd5171ecc2b57e99fb5 = L.marker(
                 [45.33, -121.6823],
                 {}
-            ).addTo(map_e95ab318166592538133d763e049586c);
+            ).addTo(map_6946f001b8913c0718df8ba193e292ac);
         
     
-            var icon_2c46746bc81e8152f539c85a0299923c = L.AwesomeMarkers.icon(
+            var icon_e5e6e54cbfe4c005496ebce43ffd34a7 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;info-sign&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
             );
-            marker_516f36a41b9455c7b54123f9ad133b16.setIcon(icon_2c46746bc81e8152f539c85a0299923c);
+            marker_70cf4557622addd5171ecc2b57e99fb5.setIcon(icon_e5e6e54cbfe4c005496ebce43ffd34a7);
         
     
-        var popup_c964107423f9196be5a323c5a012dd2e = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_f0e514f722e2ce144c5425fe82b93093 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_6d5e9b14f8e6f6e7be6f3e448d4c3b20 = $(`<div id=&quot;html_6d5e9b14f8e6f6e7be6f3e448d4c3b20&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Some Other Location</div>`)[0];
-                popup_c964107423f9196be5a323c5a012dd2e.setContent(html_6d5e9b14f8e6f6e7be6f3e448d4c3b20);
+                var html_16b178953e04769402db77bd9596049e = $(`<div id=&quot;html_16b178953e04769402db77bd9596049e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Some Other Location</div>`)[0];
+                popup_f0e514f722e2ce144c5425fe82b93093.setContent(html_16b178953e04769402db77bd9596049e);
             
         
 
-        marker_516f36a41b9455c7b54123f9ad133b16.bindPopup(popup_c964107423f9196be5a323c5a012dd2e)
+        marker_70cf4557622addd5171ecc2b57e99fb5.bindPopup(popup_f0e514f722e2ce144c5425fe82b93093)
         ;
 
         
@@ -1100,7 +1102,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/blob/main/content/howto/notebooks.ipynb" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p><a href="https://noaa.gov">NOAA</a> <br> <a href="https//fisheries.noaa.gov">NOAA Fisheries</a> <br> <a href="https://www.fisheries.noaa.gov/contact/southeast-fisheries-science-center">Southeast Fisheries Science Center</a></p>
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>. © CC-1.0</p>
