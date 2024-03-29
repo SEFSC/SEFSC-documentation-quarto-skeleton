@@ -4,16 +4,10 @@ project:
 format:
   html:
     theme:
-      light: [cosmo, theme.scss] 
-      dark: [cosmo, theme-dark.scss]
-    code-copy: true
-    code-overflow: wrap
-    toc: true
-
-filters:
-  - include-files.lua
-  - quarto
+      light: [cosmo, theme/theme.scss] 
+      dark: [cosmo, theme/theme-dark.scss]
 
 metadata-files:
-  - _website.yml
+  - theme/_website.yml
+  - navbars/_topnav_sefsc.yml
   - _metadata.yml
