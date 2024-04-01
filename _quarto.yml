@@ -9,5 +9,5 @@ format:
 
 metadata-files:
   - theme/_website.yml
-  - navbars/_topnav_sefsc.yml
+  - ./navbars/_topnav_sefsc.yml
   - _metadata.yml
