@@ -4,10 +4,10 @@ project:
 format:
   html:
     theme:
-      light: [cosmo, theme/theme.scss] 
-      dark: [cosmo, theme/theme-dark.scss]
+      light: [cosmo, theme-static/theme.scss] 
+      dark: [cosmo, theme-static/theme-dark.scss]
 
 metadata-files:
-  - theme/_website.yml
+  - theme-static/_website.yml
   - ./navbars/_topnav_sefsc.yml
   - _metadata.yml
