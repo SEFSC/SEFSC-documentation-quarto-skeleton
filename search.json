@@ -2,35 +2,35 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "SEFSC Quarto Documentation Theme",
+    "title": "SEFSC Quarto Documentation Theme Landing Page",
     "section": "",
     "text": "This is a template for a simple Quarto website that looks like a “book”. This is a common format for documentation. It includes a GitHub Action that will build the website automatically when you make changes to the files. The NOAA palette and fonts has been added to theme.scss. The webpage will be on the gh-pages branch. Serving the website files from this branch is a common way to keep all the website files from cluttering your main branch.\nThis Quarto website has Python code in the code.qmd file and has a Jupyter notebook. The GitHub Action will render those for you but note that you need some a special RAW block at the top of your ipynb file. Without this, the Jupyter notebook won’t render (code blocks won’t be computed). It looks like this\nAlso you will need to add any modules that your code needs to the requirements.txt file so they are installed by the GitHub Action.\nInstructions for using this theme can be found in the HOWTO: Using the SEFSC Quarto Theme pages."
   },
   {
     "objectID": "index.html#about",
     "href": "index.html#about",
-    "title": "SEFSC Quarto Documentation Theme",
+    "title": "SEFSC Quarto Documentation Theme Landing Page",
     "section": "About",
     "text": "About\nA brief high-level description of what this application is used for and what it does.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum porta iaculis. Vestibulum semper scelerisque nunc, ac sagittis quam ornare eget. Sed massa dui, vehicula at magna non, semper porttitor dolor. Pellentesque eget augue purus. Cras quis urna iaculis, aliquam urna non, malesuada velit. Suspendisse arcu diam, fringilla in ex fringilla, ultrices pharetra orci. Phasellus leo sapien, elementum vitae tempus in, aliquet vitae leo. Cras eros urna, suscipit tincidunt mi id, dignissim eleifend ante. Etiam ullamcorper dui auctor leo dapibus, at varius lorem mattis. Morbi maximus velit id nisi luctus commodo. Mauris ut bibendum urna, vel lobortis felis. Duis convallis mauris quis finibus dignissim.\nFusce interdum et ex eget maximus. Nam rhoncus elementum facilisis. Curabitur sagittis facilisis lectus, in viverra urna fermentum id. Praesent eget est libero. Praesent accumsan sed ex id finibus. In sed augue non tortor porta tristique vitae elementum sapien. Duis enim sapien, varius non nulla sit amet, mattis pharetra tellus. Ut volutpat placerat risus vitae faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
   },
   {
     "objectID": "index.html#usage",
     "href": "index.html#usage",
-    "title": "SEFSC Quarto Documentation Theme",
+    "title": "SEFSC Quarto Documentation Theme Landing Page",
     "section": "Usage",
     "text": "Usage\nDescribe how to use the application.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum porta iaculis. Vestibulum semper scelerisque nunc, ac sagittis quam ornare eget. Sed massa dui, vehicula at magna non, semper porttitor dolor. Pellentesque eget augue purus. Cras quis urna iaculis, aliquam urna non, malesuada velit. Suspendisse arcu diam, fringilla in ex fringilla, ultrices pharetra orci. Phasellus leo sapien, elementum vitae tempus in, aliquet vitae leo. Cras eros urna, suscipit tincidunt mi id, dignissim eleifend ante. Etiam ullamcorper dui auctor leo dapibus, at varius lorem mattis. Morbi maximus velit id nisi luctus commodo. Mauris ut bibendum urna, vel lobortis felis. Duis convallis mauris quis finibus dignissim.\nFusce interdum et ex eget maximus. Nam rhoncus elementum facilisis. Curabitur sagittis facilisis lectus, in viverra urna fermentum id. Praesent eget est libero. Praesent accumsan sed ex id finibus. In sed augue non tortor porta tristique vitae elementum sapien. Duis enim sapien, varius non nulla sit amet, mattis pharetra tellus. Ut volutpat placerat risus vitae faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
   },
   {
     "objectID": "index.html#options",
     "href": "index.html#options",
-    "title": "SEFSC Quarto Documentation Theme",
+    "title": "SEFSC Quarto Documentation Theme Landing Page",
     "section": "Options",
     "text": "Options\nList and describe all available options.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum porta iaculis. Vestibulum semper scelerisque nunc, ac sagittis quam ornare eget. Sed massa dui, vehicula at magna non, semper porttitor dolor. Pellentesque eget augue purus. Cras quis urna iaculis, aliquam urna non, malesuada velit. Suspendisse arcu diam, fringilla in ex fringilla, ultrices pharetra orci. Phasellus leo sapien, elementum vitae tempus in, aliquet vitae leo. Cras eros urna, suscipit tincidunt mi id, dignissim eleifend ante. Etiam ullamcorper dui auctor leo dapibus, at varius lorem mattis. Morbi maximus velit id nisi luctus commodo. Mauris ut bibendum urna, vel lobortis felis. Duis convallis mauris quis finibus dignissim.\nFusce interdum et ex eget maximus. Nam rhoncus elementum facilisis. Curabitur sagittis facilisis lectus, in viverra urna fermentum id. Praesent eget est libero. Praesent accumsan sed ex id finibus. In sed augue non tortor porta tristique vitae elementum sapien. Duis enim sapien, varius non nulla sit amet, mattis pharetra tellus. Ut volutpat placerat risus vitae faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
   },
   {
     "objectID": "index.html#release-notes",
     "href": "index.html#release-notes",
-    "title": "SEFSC Quarto Documentation Theme",
+    "title": "SEFSC Quarto Documentation Theme Landing Page",
     "section": "Release Notes",
     "text": "Release Notes\nVersion history summarizing the stages of development, enhancements, bug fixes, etc. as multiple versions are created. This section is not always relevant nor necessary, but it can be nice to see. The collapsible bulleted list below is a suggested template.\n\n\n Version History \n\n\n\nVersion 1.0 (Sep 2023): Initial version\n\n\nVersion 1.1 (Mon YYYY): Revised to include:\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum porta iaculis. Vestibulum semper scelerisque nunc, ac sagittis quam ornare eget. Sed massa dui, vehicula at magna non, semper porttitor dolor. Pellentesque eget augue purus.\n\n\nCras quis urna iaculis, aliquam urna non, malesuada velit. Suspendisse arcu diam, fringilla in ex fringilla, ultrices pharetra orci. Phasellus leo sapien, elementum vitae tempus in, aliquet vitae leo. Cras eros urna, suscipit tincidunt mi id, dignissim eleifend ante.\n\n\nEtiam ullamcorper dui auctor leo dapibus, at varius lorem mattis. Morbi maximus velit id nisi luctus commodo. Mauris ut bibendum urna, vel lobortis felis. Duis convallis mauris quis finibus dignissim.\n\n\n\n\nVersion 2.0 (Mon YYYY): Fusce interdum et ex eget maximus. Nam rhoncus elementum facilisis. Curabitur sagittis facilisis lectus, in viverra urna fermentum id. Praesent eget est libero. Praesent accumsan sed ex id finibus. In sed augue non tortor porta tristique vitae elementum sapien. Duis enim sapien, varius non nulla sit amet, mattis pharetra tellus. Ut volutpat placerat risus vitae faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
   },
