@@ -1,5 +1,5 @@
 ---
-title: "SEFSC Quarto Documentation Theme Landing Page"
+title: "SEFSC Quarto Documentation Theme"
 subtitle: "This is a placeholder markdown document that will render as the index.html page for the documentation site. Replace content as desired."
 page-layout: full
 ---
