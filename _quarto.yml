@@ -4,11 +4,10 @@ project:
 format:
   html:
     theme:
-      light: [cosmo, theme-static/theme.scss] 
-      dark: [cosmo, theme-static/theme-dark.scss]
+      light: [cosmo, theme/theme.scss] 
+      dark: [cosmo, theme/theme-dark.scss]
 
 metadata-files:
-  - theme-static/_website.yml
+  - theme/_website.yml
   - ./navbars/_topnav_sefsc.yml
-  - https://raw.githubusercontent.com/MattGrossi-NOAA/documentation-theme-quarto/navbars/_topnav_sefsc.yml
   - _metadata.yml
