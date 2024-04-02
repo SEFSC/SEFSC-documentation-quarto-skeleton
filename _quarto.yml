@@ -10,4 +10,5 @@ format:
 metadata-files:
   - theme-static/_website.yml
   - ./navbars/_topnav_sefsc.yml
+  - https://github.com/MattGrossi-NOAA/documentation-theme-quarto/blob/navbars/_topnav_sefsc.yml
   - _metadata.yml
