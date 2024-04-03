@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>App Name Documentation - Add content</title>
+<title>App Name Documentation - Creating the Custom Theme</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -29,8 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../content/howto/customizing.html" rel="next">
-<link href="../../content/howto/setup.html" rel="prev">
+<link href="../../content/about/template.html" rel="prev">
 <link href="../../theme/images/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -133,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/docs/index.html">Content</a></li><li class="breadcrumb-item"><a href="../../content/howto/index.html">HOWTO: Using the SEFSC Quarto Theme</a></li><li class="breadcrumb-item"><a href="../../content/howto/add-content.html">Add content</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/docs/index.html">Content</a></li><li class="breadcrumb-item"><a href="../../content/about/index.html">ABOUT: Creating the SEFSC Quarto Theme and Template</a></li><li class="breadcrumb-item"><a href="../../content/about/theme.html">Creating the Custom Theme</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -182,11 +215,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../content/howto/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">HOWTO: Using the SEFSC Quarto Theme</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/howto/setup.html" class="sidebar-item-text sidebar-link">
@@ -195,7 +228,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/howto/add-content.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../content/howto/add-content.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Add content</span></a>
   </div>
 </li>
@@ -241,11 +274,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../content/about/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ABOUT: Creating the SEFSC Quarto Theme and Template</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/about/about.html" class="sidebar-item-text sidebar-link">
@@ -266,7 +299,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/about/theme.html" class="sidebar-item-text sidebar-link">
+  <a href="../../content/about/theme.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Creating the Custom Theme</span></a>
   </div>
 </li>
@@ -284,17 +317,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#edit-and-add-your-pages" id="toc-edit-and-add-your-pages" class="nav-link active" data-scroll-target="#edit-and-add-your-pages">Edit and add your pages</a></li>
-  <li><a href="#add-your-pages-the-project" id="toc-add-your-pages-the-project" class="nav-link" data-scroll-target="#add-your-pages-the-project">Add your pages the project</a></li>
+  <li><a href="#step-3-creata-a-new-documentation-theme-quarto-repository" id="toc-step-3-creata-a-new-documentation-theme-quarto-repository" class="nav-link active" data-scroll-target="#step-3-creata-a-new-documentation-theme-quarto-repository">Step 3: Creata a new “documentation-theme-quarto” repository</a></li>
+  <li><a href="#step-4-clone-this-repository-locally" id="toc-step-4-clone-this-repository-locally" class="nav-link" data-scroll-target="#step-4-clone-this-repository-locally">Step 4: Clone this repository locally</a></li>
+  <li><a href="#step-5-populate-the-theme-repository" id="toc-step-5-populate-the-theme-repository" class="nav-link" data-scroll-target="#step-5-populate-the-theme-repository">Step 5: Populate the theme repository</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/blob/main/content/howto/add-content.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/blob/main/content/about/theme.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/docs/index.html">Content</a></li><li class="breadcrumb-item"><a href="../../content/howto/index.html">HOWTO: Using the SEFSC Quarto Theme</a></li><li class="breadcrumb-item"><a href="../../content/howto/add-content.html">Add content</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/docs/index.html">Content</a></li><li class="breadcrumb-item"><a href="../../content/about/index.html">ABOUT: Creating the SEFSC Quarto Theme and Template</a></li><li class="breadcrumb-item"><a href="../../content/about/theme.html">Creating the Custom Theme</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Add content</h1>
+<h1 class="title">Creating the Custom Theme</h1>
+<p class="subtitle lead">Workflow for creating a custom SEFSC Theme for GitHub Pages Documentation Sites</p>
 </div>
 
 
@@ -311,24 +346,50 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="edit-and-add-your-pages" class="level2">
-<h2 class="anchored" data-anchor-id="edit-and-add-your-pages">Edit and add your pages</h2>
-<p>Edit the qmd or md files in the <code>content</code> folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).</p>
-<p>Each page should start with</p>
-<pre><code>---
-title: your title
----</code></pre>
-<p>and the first header will be the 2nd level, so <code>##</code>. Note, there are situations where you leave off</p>
-<pre><code>---
-title: your title
----</code></pre>
-<p>and start the qmd file with a level header <code>#</code>, but if using the default title yaml (in the <code>---</code> fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation).</p>
-</section>
-<section id="add-your-pages-the-project" class="level2">
-<h2 class="anchored" data-anchor-id="add-your-pages-the-project">Add your pages the project</h2>
+<p>IOOS uses a custom website theme to maintain consistent formatting, appearance, and functionality across all documentation sites. Some of the most noticable thematic features include:</p>
 <ul>
-<li>Add the files to <code>_quarto.yml</code></li>
+<li>IOOS header logo added and colors changed in accordance with branding guidelines</li>
+<li>Page footer with appropriate links and contact information</li>
+<li>Common horizontal navigation bar with IOOS-related links and resources</li>
+<li>“Behind the scenes” configurations that govern how the website works</li>
 </ul>
+<p>This theme is simply a GitHub repository containing the necessary configuration files, scripts, and visual branding to provide the underlying structure of a documentation web page. IOOS implements this theme in all documentation pages through the use of <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules" target="_blank">GitHub submodules</a>, the details of which are beyond the scope of this document but, in short, allow <em>theme files</em> to be contained in their own repository and then embedded into a separate repository that contains the <em>content files</em> for the web page. There are several advantages to this. First, it means that individuals seeking to write documentation do not need to worry about creating a website. The “guts” already exist. Second, the same theme repository can be embedded into an infinite number of documentation repositories, providing a consistent look and feel across all of them. Finally, the theme can be modified at any time by the owner (for example, the IOOS Program Office) and those changes can easily be propagated through to every other site that uses the theme by simply pulling the changes into each of the respective repositories.</p>
+<section id="step-3-creata-a-new-documentation-theme-quarto-repository" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-creata-a-new-documentation-theme-quarto-repository">Step 3: Creata a new “documentation-theme-quarto” repository</h3>
+<p>This is done on the GitHub website and assumes the user already has a GitHub account and is signed in. These steps will duplicate the NOAA Open Science repo into that user’s account. This repo will contain the theme files and manage site appearances according to the needs of the SEFSC.</p>
+<ol type="1">
+<li><p>On the “Repositories” tab, click the green “New” button to create a new repo.</p></li>
+<li><p>Do not use a template. Select a repository ower, provide a name (<em>e.g.</em>, “documentation-theme-quarto”), and type a description, if desired.</p></li>
+<li><p>Click “Create repository”</p></li>
+</ol>
+</section>
+<section id="step-4-clone-this-repository-locally" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-clone-this-repository-locally">Step 4: Clone this repository locally</h3>
+<ol type="1">
+<li><p>One the main page of the new repo, click the green “&lt; &gt; Code” button.</p></li>
+<li><p>Copy the HTTPS web URL shown in the popup.</p></li>
+<li><p>On your local computer, in a terminal window or Command Prompt, navigate to where the repo is to be downloaded, and type</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone <span class="op">&lt;</span>URL<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>where <code>&lt;URL&gt;</code> is the web URL from <a href="#step-4-clone-this-repository-locally">Step 4</a>.2 above.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This repo can be located in the same parent directory as the template repo created earlier, but it should not be located <em>within</em> that repo.</p>
+</div>
+</div></li>
+<li><p>Press enter. The repo will now be downloaded to your local machine.</p>
+<p>Alternatively, after <a href="#step-4-clone-this-repository-locally">Step 4</a>.1, either use the “Open with GitHub Desktop” or the “Download ZIP” options shown above to download the repo. Be sure to unzip it if you retrieve it this way.</p></li>
+</ol>
+</section>
+<section id="step-5-populate-the-theme-repository" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-populate-the-theme-repository">Step 5: Populate the theme repository</h3>
 
 
 </section>
@@ -889,14 +950,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../content/howto/setup.html" class="pagination-link" aria-label="GitHub Set-up">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">GitHub Set-up</span>
+      <a href="../../content/about/template.html" class="pagination-link" aria-label="Creating the Documentation Template">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Creating the Documentation Template</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../content/howto/customizing.html" class="pagination-link" aria-label="Customization">
-        <span class="nav-page-text">Customization</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -907,7 +965,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/blob/main/content/howto/add-content.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/blob/main/content/about/theme.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p><a href="https://noaa.gov">NOAA</a> <br> <a href="https//fisheries.noaa.gov">NOAA Fisheries</a> <br> <a href="https://www.fisheries.noaa.gov/contact/southeast-fisheries-science-center">Southeast Fisheries Science Center</a></p>
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>. © CC-1.0</p>
