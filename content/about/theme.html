@@ -63,6 +63,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../content/about/customization.html" rel="next">
 <link href="../../content/about/template.html" rel="prev">
 <link href="../../theme/images/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
@@ -303,6 +304,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Creating the Custom Theme</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/about/customization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Customizing the Theme</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/about/submodules.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Merging the Template and Theme</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/about/conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final Remarks</span></a>
+  </div>
+</li>
       </ul>
   </li>
       </ul>
@@ -317,9 +336,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#step-3-creata-a-new-documentation-theme-quarto-repository" id="toc-step-3-creata-a-new-documentation-theme-quarto-repository" class="nav-link active" data-scroll-target="#step-3-creata-a-new-documentation-theme-quarto-repository">Step 3: Creata a new “documentation-theme-quarto” repository</a></li>
-  <li><a href="#step-4-clone-this-repository-locally" id="toc-step-4-clone-this-repository-locally" class="nav-link" data-scroll-target="#step-4-clone-this-repository-locally">Step 4: Clone this repository locally</a></li>
-  <li><a href="#step-5-populate-the-theme-repository" id="toc-step-5-populate-the-theme-repository" class="nav-link" data-scroll-target="#step-5-populate-the-theme-repository">Step 5: Populate the theme repository</a></li>
+  <li><a href="#step-4-create-a-new-documentation-theme-quarto-repository" id="toc-step-4-create-a-new-documentation-theme-quarto-repository" class="nav-link active" data-scroll-target="#step-4-create-a-new-documentation-theme-quarto-repository">Step 4: Create a new “documentation-theme-quarto” repository</a></li>
+  <li><a href="#step-5-clone-this-repository-locally" id="toc-step-5-clone-this-repository-locally" class="nav-link" data-scroll-target="#step-5-clone-this-repository-locally">Step 5: Clone this repository locally</a></li>
+  <li><a href="#step-6-populate-the-theme-repository" id="toc-step-6-populate-the-theme-repository" class="nav-link" data-scroll-target="#step-6-populate-the-theme-repository">Step 6: Populate the theme repository</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/blob/main/content/about/theme.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -354,21 +373,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>“Behind the scenes” configurations that govern how the website works</li>
 </ul>
 <p>This theme is simply a GitHub repository containing the necessary configuration files, scripts, and visual branding to provide the underlying structure of a documentation web page. IOOS implements this theme in all documentation pages through the use of <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules" target="_blank">GitHub submodules</a>, the details of which are beyond the scope of this document but, in short, allow <em>theme files</em> to be contained in their own repository and then embedded into a separate repository that contains the <em>content files</em> for the web page. There are several advantages to this. First, it means that individuals seeking to write documentation do not need to worry about creating a website. The “guts” already exist. Second, the same theme repository can be embedded into an infinite number of documentation repositories, providing a consistent look and feel across all of them. Finally, the theme can be modified at any time by the owner (for example, the IOOS Program Office) and those changes can easily be propagated through to every other site that uses the theme by simply pulling the changes into each of the respective repositories.</p>
-<section id="step-3-creata-a-new-documentation-theme-quarto-repository" class="level3">
-<h3 class="anchored" data-anchor-id="step-3-creata-a-new-documentation-theme-quarto-repository">Step 3: Creata a new “documentation-theme-quarto” repository</h3>
+<section id="step-4-create-a-new-documentation-theme-quarto-repository" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-create-a-new-documentation-theme-quarto-repository">Step 4: Create a new “documentation-theme-quarto” repository</h3>
 <p>This is done on the GitHub website and assumes the user already has a GitHub account and is signed in. These steps will duplicate the NOAA Open Science repo into that user’s account. This repo will contain the theme files and manage site appearances according to the needs of the SEFSC.</p>
 <ol type="1">
 <li><p>On the “Repositories” tab, click the green “New” button to create a new repo.</p></li>
-<li><p>Do not use a template. Select a repository ower, provide a name (<em>e.g.</em>, “documentation-theme-quarto”), and type a description, if desired.</p></li>
-<li><p>Click “Create repository”</p></li>
+<li><p>Do not select a template. Select a repository ower, provide a name (<em>e.g.</em>, “documentation-theme-quarto”), and type a description, if desired.</p></li>
+<li><p>Click “Create repository”. We will refer to this repo as the <em>theme repo</em> throughout these instructions.</p></li>
 </ol>
 </section>
-<section id="step-4-clone-this-repository-locally" class="level3">
-<h3 class="anchored" data-anchor-id="step-4-clone-this-repository-locally">Step 4: Clone this repository locally</h3>
+<section id="step-5-clone-this-repository-locally" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-clone-this-repository-locally">Step 5: Clone this repository locally</h3>
 <ol type="1">
 <li><p>One the main page of the new repo, click the green “&lt; &gt; Code” button.</p></li>
 <li><p>Copy the HTTPS web URL shown in the popup.</p></li>
-<li><p>On your local computer, in a terminal window or Command Prompt, navigate to where the repo is to be downloaded, and type</p>
+<li><p>On your local computer, in a terminal window or Command Prompt, navigate to where the theme repo is to be downloaded, and type</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone <span class="op">&lt;</span>URL<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>where <code>&lt;URL&gt;</code> is the web URL from <a href="#step-4-clone-this-repository-locally">Step 4</a>.2 above.</p>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -381,15 +400,48 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This repo can be located in the same parent directory as the template repo created earlier, but it should not be located <em>within</em> that repo.</p>
+<p>This theme repo can be located in the same parent directory as the template repo created earlier, but it should not be located <em>within</em> that repo.</p>
 </div>
 </div></li>
 <li><p>Press enter. The repo will now be downloaded to your local machine.</p>
 <p>Alternatively, after <a href="#step-4-clone-this-repository-locally">Step 4</a>.1, either use the “Open with GitHub Desktop” or the “Download ZIP” options shown above to download the repo. Be sure to unzip it if you retrieve it this way.</p></li>
 </ol>
 </section>
-<section id="step-5-populate-the-theme-repository" class="level3">
-<h3 class="anchored" data-anchor-id="step-5-populate-the-theme-repository">Step 5: Populate the theme repository</h3>
+<section id="step-6-populate-the-theme-repository" class="level3">
+<h3 class="anchored" data-anchor-id="step-6-populate-the-theme-repository">Step 6: Populate the theme repository</h3>
+<ol type="1">
+<li><p>Move the following <strong>from</strong> the <em>template repo</em> <strong>to</strong> this new <strong>theme repo</strong>:</p>
+<ul>
+<li>theme-dark.scss</li>
+<li>theme.scss</li>
+<li>LICENSE</li>
+<li>images (directory and content)</li>
+</ul>
+<p>If using a terminal or Command Prompt (Git Bash is recommended on Windows):</p>
+<p><code>mv -r path/to/template-repo/filename path/to/theme-repo</code></p>
+<p>If you are in the template repo directory, you can use:</p>
+<p><code>mv filename path/to/theme-repo</code></p>
+<p>Or, if you are in the theme repo directory:</p>
+<p><code>mv -r path/to/template-repo .</code></p></li>
+<li><p>Commit these changes to each repo. You can use the same commit message for each if you want, for example:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="pp">*</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Move theme files from template repo to theme repo"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This will have to be done separately in each repo.</p>
+</div>
+</div></li>
+</ol>
+<p>Now we have a theme repo, we can customize it for the SEFSC.</p>
 
 
 </section>
@@ -955,6 +1007,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../../content/about/customization.html" class="pagination-link" aria-label="Customizing the Theme">
+        <span class="nav-page-text">Customizing the Theme</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

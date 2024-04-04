@@ -304,6 +304,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Creating the Custom Theme</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/about/customization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Customizing the Theme</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/about/submodules.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Merging the Template and Theme</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/about/conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final Remarks</span></a>
+  </div>
+</li>
       </ul>
   </li>
       </ul>
@@ -320,6 +338,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#step-1-clone-the-nmfs-open-science-repository" id="toc-step-1-clone-the-nmfs-open-science-repository" class="nav-link active" data-scroll-target="#step-1-clone-the-nmfs-open-science-repository">Step 1: Clone the NMFS Open Science repository</a></li>
   <li><a href="#step-2-clone-this-new-repo-locally" id="toc-step-2-clone-this-new-repo-locally" class="nav-link" data-scroll-target="#step-2-clone-this-new-repo-locally">Step 2: Clone this new repo locally</a></li>
+  <li><a href="#step-3-add-a-new-docs-branch" id="toc-step-3-add-a-new-docs-branch" class="nav-link" data-scroll-target="#step-3-add-a-new-docs-branch">Step 3: Add a new docs branch</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/blob/main/content/about/template.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -356,10 +375,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img width="670" alt="image" src="../../images/clone.png"></p>
 <ol start="3" type="1">
 <li><p>Select the “Include all branches” box. This is important to ensure everything works without any additional manual configuration.</p></li>
-<li><p>Select a repo owner and provide a name for the new repo being created. Enter a description, if desired. (This can be changed or added later.) Select “Public”.</p></li>
-<li><p>Click “Create repository”</p>
+<li><p>Select a repo owner and provide a name for the new repo being created. We will refer to this repo as the <em>template repo</em> throughout these instructions. Enter a description, if desired. (This can be changed or added later.) Select “Public”.</p></li>
+<li><p>Click “Create repository”.</p>
 <p><img width="670" alt="image" src="../../images/createrepo.png"></p></li>
-<li><p>In the newly created repo, click “Settings” at the top of the page.</p></li>
+<li><p>In the newly created template repo, click “Settings” at the top of the page.</p></li>
 <li><p>Select “Pages” on the side menu.</p></li>
 <li><p>Enable GitHub Pages, if not already enabled, and note the URL at which the site is live. You can verify that everything worked by navigating to the site in a web browser. It should exactly like the <a href="https://nmfs-opensci.github.io/NOAA-quarto-simple-python/" target="_blank">original web book</a>. Keep other settings unchanged and save any changes.</p>
 <p><img width="670" alt="image" src="../../images/enable-ghpages.png"></p></li>
@@ -376,6 +395,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Press enter. The repo will now be downloaded to your local machine.</p>
 <p>Alternatively, after <a href="#step-2-clone-this-new-repo-locally">Step 2</a>.1, either use the “Open with GitHub Desktop” or the “Download ZIP” options shown above to download the repo. Be sure to unzip it if you retrieve it this way.</p></li>
 </ol>
+</section>
+<section id="step-3-add-a-new-docs-branch" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-add-a-new-docs-branch">Step 3: Add a new docs branch</h3>
+<p>The repo is currently configured to render the Quarto project on the <code>main</code> branch and publish the website to the <code>gh-pages</code> branch. To make this more suitable for code repositories, we will reserve the <code>main</code> branch for code and other project files and use a dedicated <code>docs</code> branch to host the Quarto website files.</p>
+<ol type="1">
+<li><p>Using a terminal or Command Prompt on your local computer, navigate to the new template repo directory.</p></li>
+<li><p>Create a new <code>docs</code> branch and push to GitHub:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> docs</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin docs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Clear out the <code>main</code> branch and return to <code>docs</code>:</p>
+<p>```bash git checkout main rm -r . git commit -m “Remove all files from branch” git push origin main git checkout docs</p></li>
+</ol>
+<p>From this point on, all template repo activity will refer to the <code>docs</code> branch unless otherwise noted. Next we’ll a second repo for the theme itself.</p>
 
 
 </section>
