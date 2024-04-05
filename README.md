@@ -1,41 +1,41 @@
-# NOAA quarto simple website with Python in qmd or Jupyter Notebooks
+# SEFSC-documentation-quarto-python-skeleton
 
-This is a template for [a simple Quarto website](https://nmfs-opensci.github.io/NOAA-quarto-simple-python/) that looks like a "book". This is a common format for documentation. It includes a GitHub Action that will build the website automatically when you make changes to the files. The webpage will use the `gh-pages` branch. Serving the website files from this branch is a common way to keep all the website files from cluttering your main branch. 
+A template/skeleton repository that can be used as a starting point to create a new SEFSC GitHub Documentation Site for deployment to [https://sefsc.github.io/](https://sefsc.github.io/).
 
-This Quarto website has Python code in the `code.qmd` file and has a Jupyter notebook. The GitHub Action will render those for you but note that you need some a special **RAW** block at the top of your ipynb file. Without this, the Jupyter notebook won't render (code blocks won't be computed). It looks like this
+### Getting Started
+
+See online documentation for working with this repository at: [https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/howto.html](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/howto.html)
+
+*Delete the 'SEFSC-documentation-quarto-python-skeleton' heading above, delete this comment and the remaining text above, modify the remaining README content below to be relevant to your documentation site, and make sure to change the Quarto site configuration files according to the instructions in the HOWTO/documentation. Once your site content looks ready to go, it can be pushed to the [SEFSC GitHub Organization](https://github.com/sefsc) to be deployed.*
+
+# SEFSC Documentation Site: ___________
+
+**Site URL:** https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton or https://sefsc.github.io/SEFSC-documentation-quarto-python-skeleton
+
+### Deploying site locally
+Requirements:
+* Quarto
+* Python
+* Python packages (template demo only):
+  - matplotlib
+  - numpy
+  - markdown
+  - folium
+  - jupyter
+
+Clone this repository:
+```commandline
+git clone https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton.git
 ```
----
-title: Jupyter Notebook
-execute:
-  enabled: true
-jupyter: python3
----
-```
-Also you will need to add any modules that your code needs to the `requirements.txt` file so they are installed by the GitHub Action. You can run this code from a terminal window:
-```
-python3 -m pip install -r requirements.txt
-```
-Note this assumes Python 3+.
+Rename the resulting `SEFSC-documentation-quarto-python-skeleton` directory to a name of your choice, and follow further [Getting Started](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/setup.html) section in the HOWTO documentation.
 
-## GitHub Set-up
+Further instructions for modifying and configuring your site can be found in the  [Editing and configuring your documentation site](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/customizing.html) section of the HOWTO.
 
-* Click the green "Use This Template" button to make a repository with this content. Make sure to make your repo public (since GitHub Pages doesn't work on private repos unless you have a paid account) and check box to include all the branches (so that you get the gh-pages branch).
-<img width="637" alt="image" src="https://user-images.githubusercontent.com/2545978/197051535-c43c62de-17e8-40bf-a536-3eea8db250c4.png">
+#### Editing site content
 
-* Turn on GitHub Pages under Settings > Pages . You will set pages to be made from the gh-pages branch and root directory.
-<img width="540" alt="image" src="https://user-images.githubusercontent.com/2545978/196808262-3d2262be-b9b5-4897-bba5-fc2f056dd335.png">
+Make edits to the appropriate Markdown files in `contents/`. 
 
-* Turn on GitHub Actions under Settings > Actions > General
-<img width="719" alt="image" src="https://user-images.githubusercontent.com/2545978/196808404-0c075fcf-db03-4516-88dd-3143b9fca475.png">
-
-* Edit the repo description and Readme to add a link to the webpage. When you edit the description, you will see the link url in the url box or you can click on the Actions tab or the  Settings > Pages page to find the url to the Quarto website
-
-## Customize
-
-* Edit the qmd or md files in the `content` folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).
-* Add the files to `_quarto.yml`
-
-<hr>
+More settings changes, including renaming the site URL to match your new repository name, should be made by editing the `_metadata.yml` file in the repository root. See the [Add Content](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/add-content.html) section of the HOWTO.
 
 ### Disclaimer
 
