@@ -1,9 +1,10 @@
 ---
 title: Rendering
-order: 4
+subtitle: Exploring some features of Quarto
+order: 14
 ---
 
-The repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the `gh-pages` branch.
+This repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the `gh-pages` branch.
 
 But when you are developing your content, you will want to render it locally. 
 

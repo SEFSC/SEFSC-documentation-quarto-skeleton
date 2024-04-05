@@ -69,14 +69,24 @@ Committing all changes at the end of each step below is strongly recommended, ke
    Setting `contents: auto` allows the sidebar to be automatically generated, eliminating the need for manual construction or configuration. Users should therefore follow the instructions in the [docs](https://quarto.org/docs/websites/website-navigation.html#auto-generation){target="_blank"} for facilitating this feature.
    :::
 
-4. In the theme repo `theme.scss` and `theme-dark.scss` files, assign NOAA-specific colors to variable names for easy use later. These colors were taken from the NOAA Fisheries Brand Standards and include NOAA primary colors, grays, and secondary colors for each region. For example:
+4. In the theme repo `theme.scss` and `theme-dark.scss` files:
 
-   ```yml
-   // NOAA Fisheries Primary Palette
-   $noaa-light-blue: #0093D0;
-   $noaa-dark-blue: #0055A4;
-   $navy-blue-pantone: #00467F;
-   ```
+   a. Assign NOAA-specific colors to variable names for easy use later. These colors were taken from the NOAA Fisheries Brand Standards and include NOAA primary colors, grays, and secondary colors for each region. For example:
+
+      ```yml
+      // NOAA Fisheries Primary Palette
+      $noaa-light-blue: #0093D0;
+      $noaa-dark-blue: #0055A4;
+      $navy-blue-pantone: #00467F;
+      ```
+
+   b. Set font colors:
+
+      ```yml
+      // Font colors
+      $headings-color: $navy-blue-pantone !default;
+      $link-color: #216f9b !default;
+      ```
 
 5. Upload a new favicon image to the `images` directory, if desired. If a different file name is used, modify `_website.yml` accordingly:
 

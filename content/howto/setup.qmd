@@ -1,31 +1,108 @@
 ---
-title: GitHub Set-up
+title: Getting Started
+subtitle: Creating your own documentation page using the SEFSC Quarto Theme
 order: 1
 ---
 
-This Quarto website has Python code in the `code.qmd` file and has a Jupyter notebook. The GitHub Action will render those for you but note that you need some a special **RAW** block at the top of your ipynb file. Without this, the Jupyter notebook won't render (code blocks won't be computed). It looks like this
-```
----
-title: Jupyter Notebook
-execute:
-  enabled: true
-jupyter: python3
----
-```
-Also you will need to add any modules that your code needs to the `requirements.txt` file so they are installed by the GitHub Action.
+Follow [Step 1a](#step-1a-use-the-sefsc-documentation-quarto-python-skeleton-template-to-create-your-own-forked-repository) below if you do not yet have a GitHub repository and would like to start a new one with gh-pages. If you already have a repository to which you would like to add a new gh-pages branch with the SEFSC documentation template, start with [Step 1b](#step-1b-add-a-new-orphan-branch-to-an-existing-repository).
 
-## GitHub Set-up
+### Step 1a: Use the SEFSC-documentation-quarto-python-skeleton template to create your own forked repository
 
-* Click the green "use template" button to make a repository with this content.  Make sure to make your repo public (since GitHub Pages doesn't work on private repos unless you have a paid account) and check box to include all the branches (so that you get the gh-pages branch).
+This is done on the GitHub website.  These steps assume you already have a GitHub account in place.
 
-<img width="637" alt="image" src="https://user-images.githubusercontent.com/2545978/197051535-c43c62de-17e8-40bf-a536-3eea8db250c4.png">
+1. Browse to the [SEFSC-documentation-quarto-python-skeleton](https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton){target="_blank"} repository, select the "Use this template" button, and select "Create a new repository": ![GitHub use template image](https://ioos.github.io/use-template.png)
 
-* Turn on GitHub Pages under Settings > Pages . You will set pages to be made from the gh-pages branch and root directory.
+2. Select the repository owner (your own account or a GitHub organization you have write permissions to) and type a name for the repository. If the new repository is for SEFSC-related work, the repository name should adhere to the SEFSC repository naming convention as depicted in the [SEFSC GitHub SOP](https://github.com/SEFSC/SEFSC-Resources/blob/18a6c7e98b3e9b71f5e5912282d9d7f08c0e0a1a/SEFSC%20GitHub%20SOP%20and%20User%20Agreement%20Form/SEFSC%20Github%20SOP%20-%20RR%20-%20LON%20-%20BGM.pdf){target="_blank"}. Select the "Include all branches" box. This is important to ensure everything works without any additional manual configuration. Enter a description, if desired. (This can be changed or added later.) Select "Public" (GitHub Pages doesn't work on private repos unless you have a paid account). At the end of this step, you should have a new repository available at the following URL: https://github.com/owner/my-new-documentation-repo.
 
-<img width="540" alt="image" src="https://user-images.githubusercontent.com/2545978/196808262-3d2262be-b9b5-4897-bba5-fc2f056dd335.png">
+   <img width="670" alt="image" src="../../images/createrepo.png">
 
-* Turn on GitHub Actions under Settings > Actions > General
+3. In the newly created template repo, click "Settings" at the top of the page, then select "Pages" on the side menu. Enable GitHub Pages, if not already enabled, and note the URL at which the site is live. You can verify that everything worked by navigating to the site in a web browser. It should exactly like the [original web book](https://nmfs-opensci.github.io/NOAA-quarto-simple-python/){target="_blank"}. Keep other settings unchanged and save any changes.
 
-<img width="719" alt="image" src="https://user-images.githubusercontent.com/2545978/196808404-0c075fcf-db03-4516-88dd-3143b9fca475.png">
+   <img width="670" alt="image" src="../../images/enable-ghpages.png">  
 
-* Edit the repo description and Readme to add a link to the webpage. When you edit the description, you will see the link url in the url box or you can click on the Actions tab or the  Settings > Pages page to find the url.
+4. From your new repository page, download or "clone" the repository to edit it locally using code editing software such as [Visual Studio Code](https://code.visualstudio.com/){target="_blank"}. The local editing process assumes you have a git client installed in order to push your edited files back to GitHub.  For those who do not have git, editing can be accomplished on the GitHub website one file at a time (see [Step 2: Edit your documentation site content](#step-2-edit-your-documentation-site-content) below for details). 
+
+   <img width="335" alt="image" src="https://ioos.github.io/clone.png">
+
+### Step 1b: Add a new orphan branch to an existing repository
+
+An *orphan branch* in GitHub is a branch whose commit history is independent of all other branches in the repo. This is useful for GitHub Pages because we can keep the website files separate from any project code and can work on either the website or the project code independently from each other. GitHub Pages are customarily saved in branches named "gh-pages", and this repo uses a `docs` branch for the website files. We need need to create both of these in the existing rep. Start with the `gh-pages` branch, and then repeat for `docs`.
+
+1. Navigate to your local copy of the repository
+
+2. Create a new orphan branch and remove the git commit history that is automatically generated.
+
+   ```bash
+   git checkout --orphan gh-pages
+   git rm -rf .
+   rm .gitignore
+   ```
+  
+   :::{.callout-note}
+   There may or may not be a `.gitignore` file to delete. If not, do not worry.
+   :::
+
+3. We need to temporarily set the remote origin to the SEFSC documentation repo. First, note the existing remote origin URL so that we can restore it later. It can be retieved with the command:
+
+   ```bash
+   git remote -v
+   ```
+  
+   Then change the remote URL to the documentation repo:
+
+   ```bash
+   git remote set-url origin https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton.git
+   ```
+   
+   :::{.callout-note}
+   To find this new URL, navigate to the [SEFSC-documentation-quarto-python-skeleton](https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/){target="_blank" rel="noopener"} repo in a web browser and click on the green "< > Code" button.
+   :::
+
+4. Make sure you're on your *local* **gh-pages** branch and then pull the contents of the **gh-pages** branch of *SEFSC-documentation-quarto-python-skeleton* repo
+
+   ```bash
+   git checkout gh-pages
+   git pull origin gh-pages
+   ```
+   
+   Use `ls -la` to verify that you now have all of the files and directories from the skeleton repo.
+
+5. Change the local remote origin back to the original repo
+
+   ```bash
+   git remote set-url origin <old-url>
+   ```
+   
+   where `<old-url>` is the URL of the original repo retrieved in [Step 1b](#step-1b-add-a-new-orphan-branch-to-an-existing-repository).3.
+
+6. Push this new branch to the remote repo
+
+   ```bash
+   git push origin gh-pages
+   ```
+
+7. In a web browser, navigate to the repo to which you just added a `gh-pages` branch. Click the "Settings" tab, then "Pages" on left sidebar.
+
+8. In the "Build and deployment" section, under "Source", select "Deploy from branch" from the dropdown menu. 
+
+   :::{.callout-note}
+   If your repo belongs to you (as opposed to belonging to an organization), it must be a public repo for this be available.
+   :::
+
+9. Under "Branch", select "gh-pages" from the dropdown menu. Leave the directory as "/(root)" and click "Save".
+
+   <img width="540" alt="image" src="https://user-images.githubusercontent.com/2545978/196808262-3d2262be-b9b5-4897-bba5-fc2f056dd335.png">
+
+10. While still within "Settings", click "Actions" on the left sidebar, then "General".
+
+11. Under "Workflow permissions", select "Read and write permissions" to allow GitHub Actions to modify the repository, then click "Save".
+
+    <img width="719" alt="image" src="https://user-images.githubusercontent.com/2545978/196808404-0c075fcf-db03-4516-88dd-3143b9fca475.png">
+
+12. At the top of this page, you should see a banner saying "Your site is now live at..." with the URL of your documentation page. Launch the page to be sure. It should look exactly like the [SEFSC-documentation-quarto-python-skeleton page](https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/){target="_blank"} but with a URL pointing to your project.
+
+13. Repeat steps 1-6, replacing "gh-pages" with "docs" to create a `docs` branch for the website files.
+
+You should now have at least three local branches: the `gh-pages` and `docs` branches you just created, and whatever branch(es) you had originally (*e.g.*,`main`, `master`, *etc.*). Verify using `git branch --all`. Likewise, your remote repository should now have new `gh-pages` and `docs` branches as well as the original branches, and they should contain a copy of the SEFSC documentation template files and subdirectories.
+
+Use `git checkout <branch-name>` to switch between branches. Everything that follows involves this new `docs` branch.
