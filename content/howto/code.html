@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.552">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -63,7 +63,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../content/howto/acknowledgements.html" rel="next">
+<link href="../../content/howto/notebooks.html" rel="next">
 <link href="../../content/howto/publishing.html" rel="prev">
 <link href="../../theme/images/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
@@ -241,12 +241,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/howto/rendering.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Rendering</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../content/howto/publishing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Publishing</span></a>
   </div>
@@ -259,14 +253,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../content/howto/notebooks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jupyter Notebook</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../content/howto/acknowledgements.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Acknowledgments</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/howto/notebooks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Jupyter Notebook</span></a>
+  <a href="../../content/howto/rendering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rendering</span></a>
   </div>
 </li>
       </ul>
@@ -348,6 +348,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/docs/index.html">Content</a></li><li class="breadcrumb-item"><a href="../../content/howto/index.html">HOWTO: Using the SEFSC Quarto Theme</a></li><li class="breadcrumb-item"><a href="../../content/howto/code.html">Rendering with Code</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Rendering with Code</h1>
+<p class="subtitle lead">Including code blocks in a documentation page</p>
 </div>
 
 
@@ -364,8 +365,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>You can have code Python in your qmd file. You will need to have these installed on your local computer, but presumably you do already if you are adding code to your qmd files.</p>
-<div id="28bb8a7c" class="cell" data-execution_count="1">
+<p>Python code can be included in any qmd file. Note that code can only be rendered if the reader has Python (and package dependencies) installed locally.</p>
+<div id="367aafe0" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">5</span>,<span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">7</span>,<span class="dv">2</span>,<span class="dv">17</span>,<span class="dv">2</span>,<span class="dv">9</span>,<span class="dv">4</span>,<span class="dv">11</span>,<span class="dv">12</span>,<span class="dv">9</span>,<span class="dv">6</span>]</span>
@@ -381,8 +382,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<section id="polar-axis" class="level2">
-<h2 class="anchored" data-anchor-id="polar-axis">Polar Axis</h2>
+<section id="polar-axis" class="level3">
+<h3 class="anchored" data-anchor-id="polar-axis">Polar Axis</h3>
 <p>For a demonstration of a line plot on a polar axis, see <a href="#fig-polar" class="quarto-xref">Figure&nbsp;1</a>.</p>
 <div id="cell-fig-polar" class="cell" data-fig.cap="A line plot on a polar axis" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -395,7 +396,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>)</span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<div id="fig-polar" class="quarto-figure quarto-figure-center quarto-float anchored" height="439" width="450">
+<div id="fig-polar" class="quarto-figure quarto-figure-center quarto-float anchored" width="450" height="439">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="code_files/figure-html/fig-polar-output-1.png" id="fig-polar" width="450" height="439" class="figure-img">
@@ -408,17 +409,17 @@ Figure&nbsp;1
 </div>
 </div>
 </section>
-<section id="modify-the-github-action" class="level2">
-<h2 class="anchored" data-anchor-id="modify-the-github-action">Modify the GitHub Action</h2>
-<p>When you add Python modules, you will need to change the GitHub Action in <code>.github/workflows</code> to install these in order for GitHub to be able to render your webpage. The GitHub Action installs Python since I used that in <code>code.qmd</code>. If you use R or Julia instead, then you will need to update the GitHub Action to install those.</p>
+<section id="modify-the-github-action" class="level3">
+<h3 class="anchored" data-anchor-id="modify-the-github-action">Modify the GitHub Action</h3>
+<p>When you add Python modules, you will need to change the GitHub Action in <code>.github/workflows</code> to install these in order for GitHub to be able to render your webpage. The GitHub Action in this template installs Python; if another language (<em>e.g.</em>, R or Julia) is needed instead, then the GitHub Action will need to be updated to install those.</p>
 <p>If getting the GitHub Action to work is too much hassle (and that definitely happens), you can alway render locally and publish to the <code>gh-pages</code> branch. If you do this, make sure to delete or rename the GitHub Action to something like</p>
 <pre><code>render-and-publish.old_yml</code></pre>
 <p>so GitHub does not keep trying to run it. Nothing bad will happen if you don’t do this, but if you are not using the action (because it keeps failing), then you don’t need GitHub to run it.</p>
 </section>
-<section id="render-locally-and-publish-to-gh-pages-branch" class="level2">
-<h2 class="anchored" data-anchor-id="render-locally-and-publish-to-gh-pages-branch">Render locally and publish to gh-pages branch</h2>
+<section id="render-locally-and-publish-to-gh-pages-branch" class="level3">
+<h3 class="anchored" data-anchor-id="render-locally-and-publish-to-gh-pages-branch">Render locally and publish to gh-pages branch</h3>
 <p>To render locally and push up to the <code>gh-pages</code> branch, open a terminal window and then <code>cd</code> to the directory with the Quarto project. Type this in the terminal:</p>
-<pre><code>quarto render gh-pages</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
@@ -984,8 +985,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../content/howto/acknowledgements.html" class="pagination-link" aria-label="Acknowledgments">
-        <span class="nav-page-text">Acknowledgments</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../content/howto/notebooks.html" class="pagination-link" aria-label="Jupyter Notebook">
+        <span class="nav-page-text">Jupyter Notebook</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
