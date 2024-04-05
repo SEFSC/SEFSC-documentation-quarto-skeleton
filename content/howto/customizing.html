@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.4.552">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../content/howto/rendering.html" rel="next">
-<link href="../../content/howto/add-content.html" rel="prev">
+<link href="../../content/howto/add-content.html" rel="next">
+<link href="../../content/howto/setup.html" rel="prev">
 <link href="../../theme/images/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -190,19 +190,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/howto/setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GitHub Set-up</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/howto/add-content.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Add content</span></a>
+ <span class="menu-text">Getting Started</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/howto/customizing.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Customization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/howto/add-content.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Add Content</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -302,8 +302,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#quarto-documentation" id="toc-quarto-documentation" class="nav-link active" data-scroll-target="#quarto-documentation">Quarto documentation</a></li>
-  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
+  <li><a href="#step-2-setting-up-your-site-for-editing" id="toc-step-2-setting-up-your-site-for-editing" class="nav-link active" data-scroll-target="#step-2-setting-up-your-site-for-editing">Step 2: Setting up your site for editing</a></li>
+  <li><a href="#step-3-configuring-the-site" id="toc-step-3-configuring-the-site" class="nav-link" data-scroll-target="#step-3-configuring-the-site">Step 3: Configuring the site</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/blob/main/content/howto/customizing.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -313,6 +313,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/docs/index.html">Content</a></li><li class="breadcrumb-item"><a href="../../content/howto/index.html">HOWTO: Using the SEFSC Quarto Theme</a></li><li class="breadcrumb-item"><a href="../../content/howto/customizing.html">Customization</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Customization</h1>
+<p class="subtitle lead">Creating your own documentation page using the SEFSC Quarto Theme</p>
 </div>
 
 
@@ -329,19 +330,36 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="quarto-documentation" class="level2">
-<h2 class="anchored" data-anchor-id="quarto-documentation">Quarto documentation</h2>
-<p>Quarto allow many bells and whistles to make nice output. Read the documentation here <a href="https://quarto.org/docs/guide/">Quarto documentation</a>.</p>
+<section id="step-2-setting-up-your-site-for-editing" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-setting-up-your-site-for-editing">Step 2: Setting up your site for editing</h3>
+<p>Editing content in your new fork of the documentation skeleton repository can be done in one of two ways: 1. Locally using a code editor and a Quarto installation, or 2. Online using the GitHub website</p>
+<p>This repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the <code>gh-pages</code> branch. Editing locally is easier for making major changes to the site, including more complex changes to theme content. It requires <a href="https://quarto.org/docs/get-started/" target="_blank">a local installation of Quarto and a basic text editor</a> for editing theme content and git client to push your changes back to GitHub. See the <a href="#editing-locally-with-quarto">Editing locally with Quarto</a> section for details.</p>
+<p>Editing in GitHub is easier for more minor content modifications such as editing text in individual markdowns file, one at a time. See the <a href="#editing-online-in-github">Editing online in GitHub</a> section for details.</p>
+<section id="editing-locally-with-quarto" class="level4">
+<h4 class="anchored" data-anchor-id="editing-locally-with-quarto">Editing locally with Quarto</h4>
+<p>This approach allows instantaneous rendering of the site exactly as it will appear in GitHub Pages so you can more rapidly iterate changes. Once you are happy with your changes, you can then commit them to your git branch locally, and push them with git to GitHub to update the online GitHub Pages site (or follow the GitHub PR workflow, if you prefer). Using git is outside the scope of this HOWTO, but lots of documentation and tutorial are available onine to learn git.</p>
+<p>Download and install <a href="https://quarto.org/docs/get-started/" target="_blank">Quarto</a> and a code editor of choice. Follow the instructions for previewing the website within your chosen code editor (<em>e.g.</em>, <a href="https://quarto.org/docs/get-started/hello/vscode.html" target="_blank">VS Code</a>).</p>
+<p>Note that editing website content (<em>i.e.</em>, Markdown files) requires reloading the preview page to see the changes, while editing a configuration file (<em>i.e.</em>, yaml files) should trigger an automatic re-rendering of the website and updated preview.</p>
 </section>
-<section id="examples" class="level2">
-<h2 class="anchored" data-anchor-id="examples">Examples</h2>
-<p>Looking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.</p>
-<ul>
-<li><a href="https://quarto.org/docs/gallery/">Quarto gallery</a></li>
-<li><a href="https://nmfs-openscapes.github.io/">nmfs-openscapes</a></li>
-<li><a href="https://thefaylab.github.io/lab-manual/">Faye lab manual</a></li>
-<li><a href="https://nmfs-opensci.github.io/quarto_titlepages/">quarto-titlepages</a> Note the link to edit is broken. Go to repo and look in <code>documentation</code> directory.</li>
-</ul>
+<section id="editing-online-in-github" class="level4">
+<h4 class="anchored" data-anchor-id="editing-online-in-github">Editing online in GitHub</h4>
+<p>When you are setting up a new documentation site initially, you will likely want to use the local Quarto approach described above to get your site configured. Once this has been accomplished and your site is running in GitHub Pages, you can make minor edits to your site directly on GitHub with your browser in three simple steps:</p>
+<ol type="1">
+<li>Navigate to the file to be edited from the GitHub file browser (make sure you’re viewing the correct branch);</li>
+<li>Open it for editing by clicking on the “pencil” icon at the right side above the file content;</li>
+<li>Make all changes, preview them to make sure that everything is okay, and commit them to the <code>docs</code> branch (make sure that the “Commit directly to the docs branch” option is checked)</li>
+</ol>
+</section>
+</section>
+<section id="step-3-configuring-the-site" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-configuring-the-site">Step 3: Configuring the site</h3>
+<p>Currently, all of the website-level metadata that need to be changed are found in <code>_metadata.yml</code>.</p>
+<ol type="1">
+<li><p>Provide a website title. This will show up at the top left of the site and in the browser tab</p></li>
+<li><p>Specifiy the site URL. This is for website itself. To find it, navigate to the rep landing page on GitHub, click “Settings”, then “Pages”. The site URL is the address at which the site is live.</p></li>
+<li><p>Specify the repo URL, the URL of the GitHub repository itself.</p></li>
+</ol>
+<p>Commit the changes when done. That’s all there is to it.</p>
 
 
 </section>
@@ -902,13 +920,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../content/howto/add-content.html" class="pagination-link" aria-label="Add content">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Add content</span>
+      <a href="../../content/howto/setup.html" class="pagination-link" aria-label="Getting Started">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Getting Started</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../content/howto/rendering.html" class="pagination-link" aria-label="Rendering">
-        <span class="nav-page-text">Rendering</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../content/howto/add-content.html" class="pagination-link" aria-label="Add Content">
+        <span class="nav-page-text">Add Content</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.4.552">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>App Name Documentation - GitHub Set-up</title>
+<title>App Name Documentation - Getting Started</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -29,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../content/howto/add-content.html" rel="next">
+<link href="../../content/howto/customizing.html" rel="next">
 <link href="../../content/howto/index.html" rel="prev">
 <link href="../../theme/images/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
@@ -133,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/docs/index.html">Content</a></li><li class="breadcrumb-item"><a href="../../content/howto/index.html">HOWTO: Using the SEFSC Quarto Theme</a></li><li class="breadcrumb-item"><a href="../../content/howto/setup.html">GitHub Set-up</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/docs/index.html">Content</a></li><li class="breadcrumb-item"><a href="../../content/howto/index.html">HOWTO: Using the SEFSC Quarto Theme</a></li><li class="breadcrumb-item"><a href="../../content/howto/setup.html">Getting Started</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -190,19 +224,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/howto/setup.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">GitHub Set-up</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/howto/add-content.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Add content</span></a>
+ <span class="menu-text">Getting Started</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/howto/customizing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Customization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/howto/add-content.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Add Content</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -302,16 +336,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#github-set-up" id="toc-github-set-up" class="nav-link active" data-scroll-target="#github-set-up">GitHub Set-up</a></li>
+  <li><a href="#step-1a-use-the-sefsc-documentation-quarto-python-skeleton-template-to-create-your-own-forked-repository" id="toc-step-1a-use-the-sefsc-documentation-quarto-python-skeleton-template-to-create-your-own-forked-repository" class="nav-link active" data-scroll-target="#step-1a-use-the-sefsc-documentation-quarto-python-skeleton-template-to-create-your-own-forked-repository">Step 1a: Use the SEFSC-documentation-quarto-python-skeleton template to create your own forked repository</a></li>
+  <li><a href="#step-1b-add-a-new-orphan-branch-to-an-existing-repository" id="toc-step-1b-add-a-new-orphan-branch-to-an-existing-repository" class="nav-link" data-scroll-target="#step-1b-add-a-new-orphan-branch-to-an-existing-repository">Step 1b: Add a new orphan branch to an existing repository</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/blob/main/content/howto/setup.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/docs/index.html">Content</a></li><li class="breadcrumb-item"><a href="../../content/howto/index.html">HOWTO: Using the SEFSC Quarto Theme</a></li><li class="breadcrumb-item"><a href="../../content/howto/setup.html">GitHub Set-up</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/docs/index.html">Content</a></li><li class="breadcrumb-item"><a href="../../content/howto/index.html">HOWTO: Using the SEFSC Quarto Theme</a></li><li class="breadcrumb-item"><a href="../../content/howto/setup.html">Getting Started</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">GitHub Set-up</h1>
+<h1 class="title">Getting Started</h1>
+<p class="subtitle lead">Creating your own documentation page using the SEFSC Quarto Theme</p>
 </div>
 
 
@@ -328,31 +364,93 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This Quarto website has Python code in the <code>code.qmd</code> file and has a Jupyter notebook. The GitHub Action will render those for you but note that you need some a special <strong>RAW</strong> block at the top of your ipynb file. Without this, the Jupyter notebook won’t render (code blocks won’t be computed). It looks like this</p>
-<pre><code>---
-title: Jupyter Notebook
-execute:
-  enabled: true
-jupyter: python3
----</code></pre>
-<p>Also you will need to add any modules that your code needs to the <code>requirements.txt</code> file so they are installed by the GitHub Action.</p>
-<section id="github-set-up" class="level2">
-<h2 class="anchored" data-anchor-id="github-set-up">GitHub Set-up</h2>
-<ul>
-<li>Click the green “use template” button to make a repository with this content. Make sure to make your repo public (since GitHub Pages doesn’t work on private repos unless you have a paid account) and check box to include all the branches (so that you get the gh-pages branch).</li>
-</ul>
-<p><img width="637" alt="image" src="https://user-images.githubusercontent.com/2545978/197051535-c43c62de-17e8-40bf-a536-3eea8db250c4.png"></p>
-<ul>
-<li>Turn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and root directory.</li>
-</ul>
-<p><img width="540" alt="image" src="https://user-images.githubusercontent.com/2545978/196808262-3d2262be-b9b5-4897-bba5-fc2f056dd335.png"></p>
-<ul>
-<li>Turn on GitHub Actions under Settings &gt; Actions &gt; General</li>
-</ul>
-<p><img width="719" alt="image" src="https://user-images.githubusercontent.com/2545978/196808404-0c075fcf-db03-4516-88dd-3143b9fca475.png"></p>
-<ul>
-<li>Edit the repo description and Readme to add a link to the webpage. When you edit the description, you will see the link url in the url box or you can click on the Actions tab or the Settings &gt; Pages page to find the url.</li>
-</ul>
+<p>Follow <a href="#step-1a-use-the-sefsc-documentation-quarto-python-skeleton-template-to-create-your-own-forked-repository">Step 1a</a> below if you do not yet have a GitHub repository and would like to start a new one with gh-pages. If you already have a repository to which you would like to add a new gh-pages branch with the SEFSC documentation template, start with <a href="#step-1b-add-a-new-orphan-branch-to-an-existing-repository">Step 1b</a>.</p>
+<section id="step-1a-use-the-sefsc-documentation-quarto-python-skeleton-template-to-create-your-own-forked-repository" class="level3">
+<h3 class="anchored" data-anchor-id="step-1a-use-the-sefsc-documentation-quarto-python-skeleton-template-to-create-your-own-forked-repository">Step 1a: Use the SEFSC-documentation-quarto-python-skeleton template to create your own forked repository</h3>
+<p>This is done on the GitHub website. These steps assume you already have a GitHub account in place.</p>
+<ol type="1">
+<li><p>Browse to the <a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton" target="_blank">SEFSC-documentation-quarto-python-skeleton</a> repository, select the “Use this template” button, and select “Create a new repository”: <img src="https://ioos.github.io/use-template.png" class="img-fluid" alt="GitHub use template image"></p></li>
+<li><p>Select the repository owner (your own account or a GitHub organization you have write permissions to) and type a name for the repository. If the new repository is for SEFSC-related work, the repository name should adhere to the SEFSC repository naming convention as depicted in the <a href="https://github.com/SEFSC/SEFSC-Resources/blob/18a6c7e98b3e9b71f5e5912282d9d7f08c0e0a1a/SEFSC%20GitHub%20SOP%20and%20User%20Agreement%20Form/SEFSC%20Github%20SOP%20-%20RR%20-%20LON%20-%20BGM.pdf" target="_blank">SEFSC GitHub SOP</a>. Select the “Include all branches” box. This is important to ensure everything works without any additional manual configuration. Enter a description, if desired. (This can be changed or added later.) Select “Public” (GitHub Pages doesn’t work on private repos unless you have a paid account). At the end of this step, you should have a new repository available at the following URL: https://github.com/owner/my-new-documentation-repo.</p>
+<p><img width="670" alt="image" src="../../images/createrepo.png"></p></li>
+<li><p>In the newly created template repo, click “Settings” at the top of the page, then select “Pages” on the side menu. Enable GitHub Pages, if not already enabled, and note the URL at which the site is live. You can verify that everything worked by navigating to the site in a web browser. It should exactly like the <a href="https://nmfs-opensci.github.io/NOAA-quarto-simple-python/" target="_blank">original web book</a>. Keep other settings unchanged and save any changes.</p>
+<p><img width="670" alt="image" src="../../images/enable-ghpages.png"></p></li>
+<li><p>From your new repository page, download or “clone” the repository to edit it locally using code editing software such as <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>. The local editing process assumes you have a git client installed in order to push your edited files back to GitHub. For those who do not have git, editing can be accomplished on the GitHub website one file at a time (see <a href="#step-2-edit-your-documentation-site-content">Step 2: Edit your documentation site content</a> below for details).</p>
+<p><img width="335" alt="image" src="https://ioos.github.io/clone.png"></p></li>
+</ol>
+</section>
+<section id="step-1b-add-a-new-orphan-branch-to-an-existing-repository" class="level3">
+<h3 class="anchored" data-anchor-id="step-1b-add-a-new-orphan-branch-to-an-existing-repository">Step 1b: Add a new orphan branch to an existing repository</h3>
+<p>An <em>orphan branch</em> in GitHub is a branch whose commit history is independent of all other branches in the repo. This is useful for GitHub Pages because we can keep the website files separate from any project code and can work on either the website or the project code independently from each other. GitHub Pages are customarily saved in branches named “gh-pages”, and this repo uses a <code>docs</code> branch for the website files. We need need to create both of these in the existing rep. Start with the <code>gh-pages</code> branch, and then repeat for <code>docs</code>.</p>
+<ol type="1">
+<li><p>Navigate to your local copy of the repository</p></li>
+<li><p>Create a new orphan branch and remove the git commit history that is automatically generated.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">--orphan</span> gh-pages</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> rm <span class="at">-rf</span> .</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> .gitignore</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There may or may not be a <code>.gitignore</code> file to delete. If not, do not worry.</p>
+</div>
+</div></li>
+<li><p>We need to temporarily set the remote origin to the SEFSC documentation repo. First, note the existing remote origin URL so that we can restore it later. It can be retieved with the command:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote <span class="at">-v</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then change the remote URL to the documentation repo:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote set-url origin https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To find this new URL, navigate to the <a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/" target="_blank" rel="noopener">SEFSC-documentation-quarto-python-skeleton</a> repo in a web browser and click on the green “&lt; &gt; Code” button.</p>
+</div>
+</div></li>
+<li><p>Make sure you’re on your <em>local</em> <strong>gh-pages</strong> branch and then pull the contents of the <strong>gh-pages</strong> branch of <em>SEFSC-documentation-quarto-python-skeleton</em> repo</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout gh-pages</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Use <code>ls -la</code> to verify that you now have all of the files and directories from the skeleton repo.</p></li>
+<li><p>Change the local remote origin back to the original repo</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote set-url origin <span class="op">&lt;</span>old-url<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>where <code>&lt;old-url&gt;</code> is the URL of the original repo retrieved in <a href="#step-1b-add-a-new-orphan-branch-to-an-existing-repository">Step 1b</a>.3.</p></li>
+<li><p>Push this new branch to the remote repo</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>In a web browser, navigate to the repo to which you just added a <code>gh-pages</code> branch. Click the “Settings” tab, then “Pages” on left sidebar.</p></li>
+<li><p>In the “Build and deployment” section, under “Source”, select “Deploy from branch” from the dropdown menu.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If your repo belongs to you (as opposed to belonging to an organization), it must be a public repo for this be available.</p>
+</div>
+</div></li>
+<li><p>Under “Branch”, select “gh-pages” from the dropdown menu. Leave the directory as “/(root)” and click “Save”.</p>
+<p><img width="540" alt="image" src="https://user-images.githubusercontent.com/2545978/196808262-3d2262be-b9b5-4897-bba5-fc2f056dd335.png"></p></li>
+<li><p>While still within “Settings”, click “Actions” on the left sidebar, then “General”.</p></li>
+<li><p>Under “Workflow permissions”, select “Read and write permissions” to allow GitHub Actions to modify the repository, then click “Save”.</p>
+<p><img width="719" alt="image" src="https://user-images.githubusercontent.com/2545978/196808404-0c075fcf-db03-4516-88dd-3143b9fca475.png"></p></li>
+<li><p>At the top of this page, you should see a banner saying “Your site is now live at…” with the URL of your documentation page. Launch the page to be sure. It should look exactly like the <a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/" target="_blank">SEFSC-documentation-quarto-python-skeleton page</a> but with a URL pointing to your project.</p></li>
+<li><p>Repeat steps 1-6, replacing “gh-pages” with “docs” to create a <code>docs</code> branch for the website files.</p></li>
+</ol>
+<p>You should now have at least three local branches: the <code>gh-pages</code> and <code>docs</code> branches you just created, and whatever branch(es) you had originally (<em>e.g.</em>,<code>main</code>, <code>master</code>, <em>etc.</em>). Verify using <code>git branch --all</code>. Likewise, your remote repository should now have new <code>gh-pages</code> and <code>docs</code> branches as well as the original branches, and they should contain a copy of the SEFSC documentation template files and subdirectories.</p>
+<p>Use <code>git checkout &lt;branch-name&gt;</code> to switch between branches. Everything that follows involves this new <code>docs</code> branch.</p>
 
 
 </section>
@@ -918,8 +1016,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../content/howto/add-content.html" class="pagination-link" aria-label="Add content">
-        <span class="nav-page-text">Add content</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../content/howto/customizing.html" class="pagination-link" aria-label="Customization">
+        <span class="nav-page-text">Customization</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

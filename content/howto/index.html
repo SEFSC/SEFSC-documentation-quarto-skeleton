@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.4.552">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -190,19 +190,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/howto/setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GitHub Set-up</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/howto/add-content.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Add content</span></a>
+ <span class="menu-text">Getting Started</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/howto/customizing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Customization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/howto/add-content.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Add Content</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -298,7 +298,13 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#preliminaries" id="toc-preliminaries" class="nav-link active" data-scroll-target="#preliminaries">Preliminaries</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/blob/main/content/howto/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -306,6 +312,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/docs/index.html">Content</a></li><li class="breadcrumb-item"><a href="../../content/howto/index.html">HOWTO: Using the SEFSC Quarto Theme</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">HOWTO: Using the SEFSC Quarto Theme</h1>
+<p class="subtitle lead">Creating your own documentation page using the SEFSC Quarto Theme</p>
 </div>
 
 
@@ -322,8 +329,22 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>The <a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton" target="_blank">SEFSC-documentation-quarto-skeleton</a> repository is a template, or “skeleton”, starting point to create a new GitHub-based documentation site that uses the NOAA Fisheries Southeast Fisheries Science Center (SEFSC) <a href="https://github.com/MattGrossi-NOAA/documentation-theme-quarto" target="_blank">documentation-theme-quarto</a> documentation format and functionality. This documentation theme is derived from the NOAA Fisheries Open Science <a href="https://github.com/nmfs-opensci/NOAA-quarto-simple-python" target="_blank">NOAA-quarto-simple-python</a> repository and is inspired by the Integrated Ocean Observing System (IOOS) <a href="https://github.com/ioos/documentation-theme-jekyll" target="_blank">documentation-theme-jekyll</a>, which is used for all <a href="https://ioos.github.io" target="_blank">https://ioos.github.io</a> sites.</p>
+<p>The instructions below will allow you to create a new GitHub Pages site that follows the look and feel/functionality of the documentation theme used by the <a href="https://ioos.github.io" target="_blank">https://ioos.github.io</a> site. You can then add/edit the template markdown documents with your own content.</p>
+<p>The theme has many additional features that have are not demonstrated nor utilized in this preview repository. Check out the <a href="https://quarto.org/docs/websites/" target="_blank">Quarto documentation</a> to learn more.</p>
+<section id="preliminaries" class="level2">
+<h2 class="anchored" data-anchor-id="preliminaries">Preliminaries</h2>
+<p>This Quarto website has Python code in the <code>code.qmd</code> file and has a Jupyter notebook. The GitHub Action will render those for you but note that you need some a special <strong>RAW</strong> block at the top of your ipynb file. Without this, the Jupyter notebook won’t render (code blocks won’t be computed). It looks like this</p>
+<pre><code>---
+title: Jupyter Notebook
+execute:
+  enabled: true
+jupyter: python3
+---</code></pre>
+<p>Also you will need to add any modules that your code needs to the <code>requirements.txt</code> file so they are installed by the GitHub Action.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -886,8 +907,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../content/howto/setup.html" class="pagination-link" aria-label="GitHub Set-up">
-        <span class="nav-page-text">GitHub Set-up</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../content/howto/setup.html" class="pagination-link" aria-label="Getting Started">
+        <span class="nav-page-text">Getting Started</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -899,7 +920,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/blob/main/content/howto/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/blob/main/content/howto/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p><a href="https://noaa.gov">NOAA</a> <br> <a href="https//fisheries.noaa.gov">NOAA Fisheries</a> <br> <a href="https://www.fisheries.noaa.gov/contact/southeast-fisheries-science-center">Southeast Fisheries Science Center</a></p>
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>. © CC-1.0</p>
