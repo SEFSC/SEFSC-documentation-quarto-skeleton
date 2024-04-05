@@ -2,78 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/index.html</loc>
-    <lastmod>2024-04-05T20:22:40.817Z</lastmod>
+    <lastmod>2024-04-05T20:23:59.034Z</lastmod>
   </url>
   <url>
     <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/about/about.html</loc>
-    <lastmod>2024-04-05T20:22:40.813Z</lastmod>
+    <lastmod>2024-04-05T20:23:59.030Z</lastmod>
   </url>
   <url>
     <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/about/quarto.html</loc>
-    <lastmod>2024-04-05T20:22:40.813Z</lastmod>
+    <lastmod>2024-04-05T20:23:59.030Z</lastmod>
   </url>
   <url>
     <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/about/template.html</loc>
-    <lastmod>2024-04-05T20:22:40.813Z</lastmod>
+    <lastmod>2024-04-05T20:23:59.030Z</lastmod>
   </url>
   <url>
     <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/about/customization.html</loc>
-    <lastmod>2024-04-05T20:22:40.813Z</lastmod>
+    <lastmod>2024-04-05T20:23:59.030Z</lastmod>
   </url>
   <url>
     <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/acknowledgements.html</loc>
-    <lastmod>2024-04-05T20:22:40.813Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/rendering.html</loc>
-    <lastmod>2024-04-05T20:22:40.817Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/code.html</loc>
-    <lastmod>2024-04-05T20:22:40.813Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/add-content.html</loc>
-    <lastmod>2024-04-05T20:22:40.813Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/setup.html</loc>
-    <lastmod>2024-04-05T20:22:40.817Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/index.html</loc>
-    <lastmod>2024-04-05T20:22:40.813Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/customizing.html</loc>
-    <lastmod>2024-04-05T20:22:40.813Z</lastmod>
+    <lastmod>2024-04-05T20:23:59.030Z</lastmod>
   </url>
   <url>
     <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/publishing.html</loc>
-    <lastmod>2024-04-05T20:22:40.817Z</lastmod>
+    <lastmod>2024-04-05T20:23:59.034Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/customizing.html</loc>
+    <lastmod>2024-04-05T20:23:59.030Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/index.html</loc>
+    <lastmod>2024-04-05T20:23:59.030Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/setup.html</loc>
+    <lastmod>2024-04-05T20:23:59.034Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/add-content.html</loc>
+    <lastmod>2024-04-05T20:23:59.030Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/code.html</loc>
+    <lastmod>2024-04-05T20:23:59.030Z</lastmod>
   </url>
   <url>
     <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/notebooks.html</loc>
-    <lastmod>2024-04-05T20:23:36.461Z</lastmod>
+    <lastmod>2024-04-05T20:25:18.938Z</lastmod>
   </url>
   <url>
     <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/about/index.html</loc>
-    <lastmod>2024-04-05T20:22:40.813Z</lastmod>
+    <lastmod>2024-04-05T20:23:59.030Z</lastmod>
   </url>
   <url>
     <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/about/theme.html</loc>
-    <lastmod>2024-04-05T20:22:40.813Z</lastmod>
+    <lastmod>2024-04-05T20:23:59.030Z</lastmod>
   </url>
   <url>
     <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/about/submodules.html</loc>
-    <lastmod>2024-04-05T20:22:40.813Z</lastmod>
+    <lastmod>2024-04-05T20:23:59.030Z</lastmod>
   </url>
   <url>
     <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/about/conclusion.html</loc>
-    <lastmod>2024-04-05T20:22:40.813Z</lastmod>
+    <lastmod>2024-04-05T20:23:59.030Z</lastmod>
   </url>
   <url>
     <loc>https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/docs/index.html</loc>
-    <lastmod>2024-04-05T20:22:40.813Z</lastmod>
+    <lastmod>2024-04-05T20:23:59.030Z</lastmod>
   </url>
 </urlset>
