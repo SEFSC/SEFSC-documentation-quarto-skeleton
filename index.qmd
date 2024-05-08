@@ -17,6 +17,8 @@ jupyter: python3
 ```
 Also you will need to add any modules that your code needs to the `requirements.txt` file so they are installed by the GitHub Action.
 
+The documentation page would start at [Read the Docs](/content/docs/index.qmd).
+
 Instructions for using this theme can be found in the [HOWTO: Using the SEFSC Quarto Theme](/content/howto/setup.qmd) pages.
 
 ## About
