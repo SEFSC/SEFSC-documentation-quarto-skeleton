@@ -4,7 +4,7 @@ subtitle: A technical overview of customizing the theme, creating the skeleton t
 order: 3
 ---
 
-This section is for informational purposes only. It's technical. It captures the process to create the GitHub Pages [SEFSC-documentation-quarto-python-skeleton](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton){target="_blank"} repository template for use within the NOAA Fisheries Southeast Fisheries Science Center.
+This section is for informational purposes only. It's technical. It captures the process to create the GitHub Pages [SEFSC-documentation-quarto-skeleton](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-skeleton){target="_blank"} repository template for use within the NOAA Fisheries Southeast Fisheries Science Center.
 
 Nothing herein needs to be repeated to create a specific documentation page in a GitHub repository. These steps are *only necessary if one desires to create a new **template*** of the same format and functionality – for example, if a different Financial Management Center (FMC) desires to create their own custom template.
 
