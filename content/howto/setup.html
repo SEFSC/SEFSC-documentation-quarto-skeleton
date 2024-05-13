@@ -394,7 +394,7 @@ Note
 <p>There may or may not be a <code>.gitignore</code> file to delete. If not, do not worry.</p>
 </div>
 </div></li>
-<li><p>We need to temporarily set the remote origin to the SEFSC documentation repo. First, note the existing remote origin URL so that we can restore it later. It can be retieved with the command:</p>
+<li><p>We need to temporarily set the remote origin to the SEFSC documentation repo. First, note the existing remote origin URL so that we can restore it later. It can be retrieved with the command:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote <span class="at">-v</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Then change the remote URL to the documentation repo:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote set-url origin https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -411,7 +411,7 @@ Note
 <p>To find this new URL, navigate to the <a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/" target="_blank" rel="noopener">SEFSC-documentation-quarto-skeleton</a> repo in a web browser and click on the green “&lt; &gt; Code” button.</p>
 </div>
 </div></li>
-<li><p>Make sure you’re on your <em>local</em> <strong>gh-pages</strong> branch and then pull the contents of the <strong>gh-pages</strong> branch of <em>SEFSC-documentation-quarto-skeleton</em> repo</p>
+<li><p>Make sure you’re on your <em>local</em> <code>gh-pages</code> branch and then pull the contents of the <code>gh-pages</code> branch of <em>SEFSC-documentation-quarto-skeleton</em> repo</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout gh-pages</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Use <code>ls -la</code> to verify that you now have all of the files and directories from the skeleton repo.</p></li>
