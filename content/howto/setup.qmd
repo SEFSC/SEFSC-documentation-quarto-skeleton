@@ -42,7 +42,7 @@ An *orphan branch* in GitHub is a branch whose commit history is independent of 
    There may or may not be a `.gitignore` file to delete. If not, do not worry.
    :::
 
-3. We need to temporarily set the remote origin to the SEFSC documentation repo. First, note the existing remote origin URL so that we can restore it later. It can be retieved with the command:
+3. We need to temporarily set the remote origin to the SEFSC documentation repo. First, note the existing remote origin URL so that we can restore it later. It can be retrieved with the command:
 
    ```bash
    git remote -v
@@ -58,7 +58,7 @@ An *orphan branch* in GitHub is a branch whose commit history is independent of 
    To find this new URL, navigate to the [SEFSC-documentation-quarto-skeleton](https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/){target="_blank" rel="noopener"} repo in a web browser and click on the green "< > Code" button.
    :::
 
-4. Make sure you're on your *local* **gh-pages** branch and then pull the contents of the **gh-pages** branch of *SEFSC-documentation-quarto-skeleton* repo
+4. Make sure you're on your *local* `gh-pages` branch and then pull the contents of the `gh-pages` branch of *SEFSC-documentation-quarto-skeleton* repo
 
    ```bash
    git checkout gh-pages
