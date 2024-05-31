@@ -1,6 +1,6 @@
 ---
 title: Publishing
-subtitle: Publishing somehwere other than gh-pages
+subtitle: Publishing somewhere other than gh-pages
 order: 4
 ---
 
