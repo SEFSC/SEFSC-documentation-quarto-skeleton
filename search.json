@@ -49,37 +49,37 @@
   {
     "objectID": "content/howto/update-theme.html",
     "href": "content/howto/update-theme.html",
-    "title": "Updating the Website Theme",
+    "title": "Updating the Theme",
     "section": "",
     "text": "The SEFSC-documentation-quarto-skeleton repository uses the SEFSC documentation-theme-quarto repo to ensure consistent documentation format and functionality. This is accomplished using GitHub submodules as described in Merging the Template and Theme. When modifications are made by the SEFSC documentation-theme-quarto repo managers, the changes need to be manually pulled into each repo linking to it. Periodically checking for updates upstream will ensure consistency across all SEFSC documentation pages.\nThe theme and navbars directories are both imported as submodules. Neither directory should be ever be manually modified within any cloned or forked documentation rep. Doing so would defeat the purpose of using submodules.",
     "crumbs": [
       "Content",
       "HOWTO: Using the SEFSC Quarto Theme",
-      "Updating the Website Theme"
+      "Updating the Theme"
     ]
   },
   {
     "objectID": "content/howto/update-theme.html#updating-the-submodules",
     "href": "content/howto/update-theme.html#updating-the-submodules",
-    "title": "Updating the Website Theme",
+    "title": "Updating the Theme",
     "section": "Updating the submodules",
     "text": "Updating the submodules\nAll of the following is done locally using a command line terminal.\nChange directories (cd) into the local repo’s parent directory. This is the directory that contains the theme and navbars folders. Change to the docs branch if needed. Check for any uncommitted changes on the branch and commit them now (not necessarily required but strongly recommended.)\ncd sefsc-documentation-quarto-skeleton\ngit checkout docs\ngit status\nPull the updates from the remote submodule repos:\ngit submodule update --init --force --remote\nThis will check both submodules and should print its status to the page. In the example below, the theme directory has been updated.\n\nAs noted in Merging the Template and Theme, the theme directory is linked to the main branch of the template repo. GitHub sees the new commit and returns both the existing commit and the new one (eea3d56..84d91cd  main       -&gt; origin/main).\nChecking the status of the repo again will reveal that new commits were made to theme and also displays the message associated with the latest commit.\n\nCommit and push these changes as usual.\ngit add theme\ngit commit -m \"Update theme\"\ngit push origin docs\n\n\n\n\n\n\nTip\n\n\n\nIt may be beneficial to use the same commit message here as was associated with the theme repo update. If the commit message is descriptive (and hopefully it is), this will keep track of what actually changed – which is the point of commit messages in the first place. Thus, in this example:\ngit add theme\ngit commit -m \"Change repo branch to docs and url behavior to new tab\"\ngit push origin docs\n\n\nIt should now be updated and good to go. Verify the new commit code shows up in the repo file list on the landing page. The new changes will take affect once the gh-pages site finishes rendering.",
     "crumbs": [
       "Content",
       "HOWTO: Using the SEFSC Quarto Theme",
-      "Updating the Website Theme"
+      "Updating the Theme"
     ]
   },
   {
     "objectID": "content/howto/update-theme.html#how-often-should-submodules-be-updated",
     "href": "content/howto/update-theme.html#how-often-should-submodules-be-updated",
-    "title": "Updating the Website Theme",
+    "title": "Updating the Theme",
     "section": "How often should submodules be updated?",
     "text": "How often should submodules be updated?\nTheme files should not change often, but unfortunately, when they do, there is currently no automatic way for forked or cloned repos downstream to know. Users are encouraged to check for changes using the git submodule update --init --force --remote command whenever they make modifications to their documentation site and, ideally, on some regular cadance, minimally once a year. If there are no new changes, this command will simply indicate that the submodules “checked out” with the latest commit code and no further action is needed.",
     "crumbs": [
       "Content",
       "HOWTO: Using the SEFSC Quarto Theme",
-      "Updating the Website Theme"
+      "Updating the Theme"
     ]
   },
   {
