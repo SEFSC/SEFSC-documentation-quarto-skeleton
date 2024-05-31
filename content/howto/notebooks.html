@@ -345,7 +345,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#interactive-outputs" id="toc-interactive-outputs" class="nav-link" data-scroll-target="#interactive-outputs">Interactive outputs</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/blob/docs/content/howto/notebooks.ipynb" target="_blank" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/blob/docs/content/howto/notebooks.ipynb" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -396,7 +396,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="interactive-outputs" class="level2">
 <h2 class="anchored" data-anchor-id="interactive-outputs">Interactive outputs</h2>
-<p>Below we’ll display a map using <a href="https://python-visualization.github.io/folium/">folium</a>. When your book is built, the code for creating the interactive map is retained.</p>
+<p>Below we’ll display a map using <a href="https://python-visualization.github.io/folium/" target="_blank">folium</a>. When your book is built, the code for creating the interactive map is retained.</p>
 <div id="cell-4" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> folium</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> folium.Map(</span>
@@ -453,7 +453,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
             <style>
-                #map_2c495ed02ed1f9af3962ecf229e9e878 {
+                #map_8cb25620cd732919d3883b825cd73870 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -467,14 +467,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <body>
     
     
-            <div class=&quot;folium-map&quot; id=&quot;map_2c495ed02ed1f9af3962ecf229e9e878&quot; ></div>
+            <div class=&quot;folium-map&quot; id=&quot;map_8cb25620cd732919d3883b825cd73870&quot; ></div>
         
 </body>
 <script>
     
     
-            var map_2c495ed02ed1f9af3962ecf229e9e878 = L.map(
-                &quot;map_2c495ed02ed1f9af3962ecf229e9e878&quot;,
+            var map_8cb25620cd732919d3883b825cd73870 = L.map(
+                &quot;map_8cb25620cd732919d3883b825cd73870&quot;,
                 {
                     center: [45.372, -121.6972],
                     crs: L.CRS.EPSG3857,
@@ -488,91 +488,91 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
         
     
-            var tile_layer_e97482c4e3212de0f670a40299b9fe33 = L.tileLayer(
+            var tile_layer_534a80a380674d4b180f5778659cdb14 = L.tileLayer(
                 &quot;Stamen Terrain&quot;,
                 {&quot;attribution&quot;: &quot;\u003ca href=https://maps.stamen.com/terrain/Stamen Terrain\u003c/a\u003e&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
         
     
-            tile_layer_e97482c4e3212de0f670a40299b9fe33.addTo(map_2c495ed02ed1f9af3962ecf229e9e878);
+            tile_layer_534a80a380674d4b180f5778659cdb14.addTo(map_8cb25620cd732919d3883b825cd73870);
         
     
-            var marker_a5f9fb402cd395aaf610f5ddb08bc1c2 = L.marker(
+            var marker_4e05c8186b099eb9af40561c6c817161 = L.marker(
                 [45.3288, -121.6625],
                 {}
-            ).addTo(map_2c495ed02ed1f9af3962ecf229e9e878);
+            ).addTo(map_8cb25620cd732919d3883b825cd73870);
         
     
-            var icon_8725b5c6250008bed52290d11e04f9b5 = L.AwesomeMarkers.icon(
+            var icon_743bd30c836e8971627dfa260d950d0a = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;cloud&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
             );
-            marker_a5f9fb402cd395aaf610f5ddb08bc1c2.setIcon(icon_8725b5c6250008bed52290d11e04f9b5);
+            marker_4e05c8186b099eb9af40561c6c817161.setIcon(icon_743bd30c836e8971627dfa260d950d0a);
         
     
-        var popup_0660ae75da6d6a86275d82b225c8afa7 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_2440edd7f3b6fd4b530e2d1699576163 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_b01ad0938a8be414d068c14dab26a77a = $(`<div id=&quot;html_b01ad0938a8be414d068c14dab26a77a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Mt. Hood Meadows</div>`)[0];
-                popup_0660ae75da6d6a86275d82b225c8afa7.setContent(html_b01ad0938a8be414d068c14dab26a77a);
+                var html_ab885036ef34d657149143d8f3c35ca1 = $(`<div id=&quot;html_ab885036ef34d657149143d8f3c35ca1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Mt. Hood Meadows</div>`)[0];
+                popup_2440edd7f3b6fd4b530e2d1699576163.setContent(html_ab885036ef34d657149143d8f3c35ca1);
             
         
 
-        marker_a5f9fb402cd395aaf610f5ddb08bc1c2.bindPopup(popup_0660ae75da6d6a86275d82b225c8afa7)
+        marker_4e05c8186b099eb9af40561c6c817161.bindPopup(popup_2440edd7f3b6fd4b530e2d1699576163)
         ;
 
         
     
     
-            var marker_f852dc024717913a94026ce62c4b649d = L.marker(
+            var marker_5f99930f5aa81a49e92f7d87c3073117 = L.marker(
                 [45.3311, -121.7113],
                 {}
-            ).addTo(map_2c495ed02ed1f9af3962ecf229e9e878);
+            ).addTo(map_8cb25620cd732919d3883b825cd73870);
         
     
-            var icon_958d0392694943993f33416d68779022 = L.AwesomeMarkers.icon(
+            var icon_233f652180789dfc317e81e7c1fcb1fd = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;info-sign&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;green&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
             );
-            marker_f852dc024717913a94026ce62c4b649d.setIcon(icon_958d0392694943993f33416d68779022);
+            marker_5f99930f5aa81a49e92f7d87c3073117.setIcon(icon_233f652180789dfc317e81e7c1fcb1fd);
         
     
-        var popup_ca5d44480d230a8430ca6a1f83372ebe = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_35729986ee08b91467e948e02b679fcd = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_72ae031cd0410dd1ede0ef09c42b2bf8 = $(`<div id=&quot;html_72ae031cd0410dd1ede0ef09c42b2bf8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Timberline Lodge</div>`)[0];
-                popup_ca5d44480d230a8430ca6a1f83372ebe.setContent(html_72ae031cd0410dd1ede0ef09c42b2bf8);
+                var html_4716c23fbac94dd57c2ae575818c5b56 = $(`<div id=&quot;html_4716c23fbac94dd57c2ae575818c5b56&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Timberline Lodge</div>`)[0];
+                popup_35729986ee08b91467e948e02b679fcd.setContent(html_4716c23fbac94dd57c2ae575818c5b56);
             
         
 
-        marker_f852dc024717913a94026ce62c4b649d.bindPopup(popup_ca5d44480d230a8430ca6a1f83372ebe)
+        marker_5f99930f5aa81a49e92f7d87c3073117.bindPopup(popup_35729986ee08b91467e948e02b679fcd)
         ;
 
         
     
     
-            var marker_ecc337d5cd1ebe94a322a336a6f678a7 = L.marker(
+            var marker_e4780b7a15855bc4f908b961549566f9 = L.marker(
                 [45.33, -121.6823],
                 {}
-            ).addTo(map_2c495ed02ed1f9af3962ecf229e9e878);
+            ).addTo(map_8cb25620cd732919d3883b825cd73870);
         
     
-            var icon_9b5e60bdf90af76bbacdd063f5788590 = L.AwesomeMarkers.icon(
+            var icon_cf2daf0c4f1c28fc204b9cc90e198e12 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;info-sign&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}
             );
-            marker_ecc337d5cd1ebe94a322a336a6f678a7.setIcon(icon_9b5e60bdf90af76bbacdd063f5788590);
+            marker_e4780b7a15855bc4f908b961549566f9.setIcon(icon_cf2daf0c4f1c28fc204b9cc90e198e12);
         
     
-        var popup_5afaad793d4cab782becf5b370a58fa1 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_7e6a11997e86d5e4d400ace3a5b0fa9f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_05996731b598def090a2b7a9518afcff = $(`<div id=&quot;html_05996731b598def090a2b7a9518afcff&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Some Other Location</div>`)[0];
-                popup_5afaad793d4cab782becf5b370a58fa1.setContent(html_05996731b598def090a2b7a9518afcff);
+                var html_701e00dd45e7dd2f5c6cd555c705225c = $(`<div id=&quot;html_701e00dd45e7dd2f5c6cd555c705225c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Some Other Location</div>`)[0];
+                popup_7e6a11997e86d5e4d400ace3a5b0fa9f.setContent(html_701e00dd45e7dd2f5c6cd555c705225c);
             
         
 
-        marker_ecc337d5cd1ebe94a322a336a6f678a7.bindPopup(popup_5afaad793d4cab782becf5b370a58fa1)
+        marker_e4780b7a15855bc4f908b961549566f9.bindPopup(popup_7e6a11997e86d5e4d400ace3a5b0fa9f)
         ;
 
         
@@ -1160,10 +1160,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/blob/docs/content/howto/notebooks.ipynb" target="_blank" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/blob/docs/content/howto/notebooks.ipynb" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
-<p><a href="https://noaa.gov">NOAA</a> <br> <a href="https//fisheries.noaa.gov">NOAA Fisheries</a> <br> <a href="https://www.fisheries.noaa.gov/contact/southeast-fisheries-science-center">Southeast Fisheries Science Center</a></p>
-<p>This page is built with <a href="https://quarto.org/">Quarto</a>. © CC-1.0</p>
+<p><a href="https://noaa.gov" target="_blank">NOAA</a> <br> <a href="https//fisheries.noaa.gov" target="_blank">NOAA Fisheries</a> <br> <a href="https://www.fisheries.noaa.gov/contact/southeast-fisheries-science-center" target="_blank">Southeast Fisheries Science Center</a></p>
+<p>This page is built with <a href="https://quarto.org/" target="_blank">Quarto</a>. © CC-1.0</p>
 </div>
   </div>
 </footer>

@@ -339,7 +339,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#step-1a-use-the-sefsc-documentation-quarto-skeleton-template-to-create-your-own-forked-repository" id="toc-step-1a-use-the-sefsc-documentation-quarto-skeleton-template-to-create-your-own-forked-repository" class="nav-link active" data-scroll-target="#step-1a-use-the-sefsc-documentation-quarto-skeleton-template-to-create-your-own-forked-repository">Step 1a: Use the SEFSC-documentation-quarto-skeleton template to create your own forked repository</a></li>
   <li><a href="#step-1b-add-a-new-orphan-branch-to-an-existing-repository" id="toc-step-1b-add-a-new-orphan-branch-to-an-existing-repository" class="nav-link" data-scroll-target="#step-1b-add-a-new-orphan-branch-to-an-existing-repository">Step 1b: Add a new orphan branch to an existing repository</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/blob/docs/content/howto/setup.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/blob/docs/content/howto/setup.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -364,7 +364,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Follow <a href="#step-1a-use-the-sefsc-documentation-quarto-skeleton-template-to-create-your-own-forked-repository">Step 1a</a> below if you do not yet have a GitHub repository and would like to start a new one with gh-pages. If you already have a repository to which you would like to add a new gh-pages branch with the SEFSC documentation template, start with <a href="#step-1b-add-a-new-orphan-branch-to-an-existing-repository">Step 1b</a>.</p>
+<p>Follow <a href="#step-1a-use-the-sefsc-documentation-quarto-skeleton-template-to-create-your-own-forked-repository" target="_blank">Step 1a</a> below if you do not yet have a GitHub repository and would like to start a new one with gh-pages. If you already have a repository to which you would like to add a new gh-pages branch with the SEFSC documentation template, start with <a href="#step-1b-add-a-new-orphan-branch-to-an-existing-repository" target="_blank">Step 1b</a>.</p>
 <section id="step-1a-use-the-sefsc-documentation-quarto-skeleton-template-to-create-your-own-forked-repository" class="level3">
 <h3 class="anchored" data-anchor-id="step-1a-use-the-sefsc-documentation-quarto-skeleton-template-to-create-your-own-forked-repository">Step 1a: Use the SEFSC-documentation-quarto-skeleton template to create your own forked repository</h3>
 <p>This is done on the GitHub website. These steps assume you already have a GitHub account in place.</p>
@@ -374,7 +374,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img width="670" alt="image" src="../../images/createrepo.png"></p></li>
 <li><p>In the newly created template repo, click “Settings” at the top of the page, then select “Pages” on the side menu. Enable GitHub Pages, if not already enabled, and note the URL at which the site is live. You can verify that everything worked by navigating to the site in a web browser. It should exactly like the <a href="https://nmfs-opensci.github.io/NOAA-quarto-simple-python/" target="_blank">original web book</a>. Keep other settings unchanged and save any changes.</p>
 <p><img width="670" alt="image" src="../../images/enable-ghpages.png"></p></li>
-<li><p>From your new repository page, download or “clone” the repository to edit it locally using code editing software such as <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>. The local editing process assumes you have a git client installed in order to push your edited files back to GitHub. For those who do not have git, editing can be accomplished on the GitHub website one file at a time (see <a href="#step-2-edit-your-documentation-site-content">Step 2: Edit your documentation site content</a> below for details).</p>
+<li><p>From your new repository page, download or “clone” the repository to edit it locally using code editing software such as <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>. The local editing process assumes you have a git client installed in order to push your edited files back to GitHub. For those who do not have git, editing can be accomplished on the GitHub website one file at a time (see <a href="#step-2-edit-your-documentation-site-content" target="_blank">Step 2: Edit your documentation site content</a> below for details).</p>
 <p><img width="335" alt="image" src="https://ioos.github.io/clone.png"></p></li>
 </ol>
 </section>
@@ -423,7 +423,7 @@ Note
 <p>Use <code>ls -la</code> to verify that you now have all of the files and directories from the skeleton repo.</p></li>
 <li><p>Change the local remote origin back to the original repo</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote set-url origin <span class="op">&lt;</span>old-url<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>where <code>&lt;old-url&gt;</code> is the URL of the original repo retrieved in <a href="#step-1b-add-a-new-orphan-branch-to-an-existing-repository">Step 1b</a>.3.</p></li>
+<p>where <code>&lt;old-url&gt;</code> is the URL of the original repo retrieved in <a href="#step-1b-add-a-new-orphan-branch-to-an-existing-repository" target="_blank">Step 1b</a>.3.</p></li>
 <li><p>Push this new branch to the remote repo</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>In a web browser, navigate to the repo to which you just added a <code>gh-pages</code> branch. Click the “Settings” tab, then “Pages” on left sidebar.</p></li>
@@ -1029,10 +1029,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/blob/docs/content/howto/setup.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/issues/new" target="_blank" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/blob/docs/content/howto/setup.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
-<p><a href="https://noaa.gov">NOAA</a> <br> <a href="https//fisheries.noaa.gov">NOAA Fisheries</a> <br> <a href="https://www.fisheries.noaa.gov/contact/southeast-fisheries-science-center">Southeast Fisheries Science Center</a></p>
-<p>This page is built with <a href="https://quarto.org/">Quarto</a>. © CC-1.0</p>
+<p><a href="https://noaa.gov" target="_blank">NOAA</a> <br> <a href="https//fisheries.noaa.gov" target="_blank">NOAA Fisheries</a> <br> <a href="https://www.fisheries.noaa.gov/contact/southeast-fisheries-science-center" target="_blank">Southeast Fisheries Science Center</a></p>
+<p>This page is built with <a href="https://quarto.org/" target="_blank">Quarto</a>. © CC-1.0</p>
 </div>
   </div>
 </footer>
