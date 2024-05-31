@@ -4,7 +4,7 @@ subtitle: Workflow for creating a custom SEFSC Theme for GitHub Pages Documentat
 order: 6
 ---
 
-Now that the template repo has been split apart and several new files added to the theme repo, the two repos need to be tied together in order for the website to work. This will be done using [GitHub submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules){target="_blank"} for the reasons discussed earlier.
+Now that the template repo has been split apart and several new files added to the theme repo, the two repos need to be tied together in order for the website to work. This will be done using [GitHub submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for the reasons discussed earlier.
 
 ### Step 8: Creating submodules
 

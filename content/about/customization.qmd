@@ -8,7 +8,7 @@ order: 5
 
 These steps take place primarily in the [theme repo created on the previous page](theme.qmd) but also reference (and modify) the [template repo created earlier](template.qmd).
 
-Quarto projects are configured using a `_quarto.yml` file; see the [docs](https://quarto.org/docs/guide/){target="_blank"} for more info. The new template repo contains this file already. The [metadata sharing](https://quarto.org/docs/projects/quarto-projects.html#shared-metadata){target="_blank"} feature of Quarto allows that `_quarto.yml` file up to be split into multiple files. Quarto will combine them together again when the project is rendered. We will take advantage of this feature here.
+Quarto projects are configured using a `_quarto.yml` file; see the [docs](https://quarto.org/docs/guide/) for more info. The new template repo contains this file already. The [metadata sharing](https://quarto.org/docs/projects/quarto-projects.html#shared-metadata) feature of Quarto allows that `_quarto.yml` file up to be split into multiple files. Quarto will combine them together again when the project is rendered. We will take advantage of this feature here.
 
 :::{.callout-tip title="GitHub Tip" collapse="true"}
 Committing all changes at the end of each step below is strongly recommended, keeping in mind that some steps modify both the template and theme repos.
@@ -66,7 +66,7 @@ Committing all changes at the end of each step below is strongly recommended, ke
    b. Configure the `sidebar` with NOAA and SEFSC information.
 
    ::: {.callout-note}
-   Setting `contents: auto` allows the sidebar to be automatically generated, eliminating the need for manual construction or configuration. Users should therefore follow the instructions in the [docs](https://quarto.org/docs/websites/website-navigation.html#auto-generation){target="_blank"} for facilitating this feature.
+   Setting `contents: auto` allows the sidebar to be automatically generated, eliminating the need for manual construction or configuration. Users should therefore follow the instructions in the [docs](https://quarto.org/docs/websites/website-navigation.html#auto-generation) for facilitating this feature.
    :::
 
 4. In the theme repo `theme.scss` and `theme-dark.scss` files:

@@ -9,7 +9,7 @@ order: 3
 
 This is done on the GitHub website and assumes the user already has a GitHub account and is signed in. These steps will duplicate the NOAA Open Science repo into that user’s account.
 
-1. Navigate to the [nmfs-opensci/NOAA-quarto-simple-python](https://github.com/nmfs-opensci/NOAA-quarto-simple-pyth){target="_blank"} in a web browser.
+1. Navigate to the [nmfs-opensci/NOAA-quarto-simple-python](https://github.com/nmfs-opensci/NOAA-quarto-simple-pyth) in a web browser.
 
 2. Click the green "Use this template" button and select "Create a new repository".
 
@@ -27,7 +27,7 @@ This is done on the GitHub website and assumes the user already has a GitHub acc
 
 7. Select "Pages" on the side menu.
 
-8. Enable GitHub Pages, if not already enabled, and note the URL at which the site is live. You can verify that everything worked by navigating to the site in a web browser. It should exactly like the [original web book](https://nmfs-opensci.github.io/NOAA-quarto-simple-python/){target="_blank"}. Keep other settings unchanged and save any changes.
+8. Enable GitHub Pages, if not already enabled, and note the URL at which the site is live. You can verify that everything worked by navigating to the site in a web browser. It should exactly like the [original web book](https://nmfs-opensci.github.io/NOAA-quarto-simple-python/). Keep other settings unchanged and save any changes.
 
    <img width="670" alt="image" src="../../images/enable-ghpages.png">  
 

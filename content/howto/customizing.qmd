@@ -10,7 +10,7 @@ Editing content in your new fork of the documentation skeleton repository can be
 1. Locally using a code editor and a Quarto installation, or
 2. Online using the GitHub website
 
-This repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the `gh-pages` branch. Editing locally is easier for making major changes to the site, including more complex changes to theme content.  It requires [a local installation of Quarto and a basic text editor](https://quarto.org/docs/get-started/){target="_blank"} for editing theme content and git client to push your changes back to GitHub.  See the [Editing locally with Quarto](#editing-locally-with-quarto) section for details.
+This repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the `gh-pages` branch. Editing locally is easier for making major changes to the site, including more complex changes to theme content.  It requires [a local installation of Quarto and a basic text editor](https://quarto.org/docs/get-started/) for editing theme content and git client to push your changes back to GitHub.  See the [Editing locally with Quarto](#editing-locally-with-quarto) section for details.
 
 Editing in GitHub is easier for more minor content modifications such as editing text in individual markdowns file, one at a time.  See the [Editing online in GitHub](#editing-online-in-github) section for details.
 
@@ -18,7 +18,7 @@ Editing in GitHub is easier for more minor content modifications such as editing
 #### Editing locally with Quarto
 This approach allows instantaneous rendering of the site exactly as it will appear in GitHub Pages so you can more rapidly iterate changes.  Once you are happy with your changes, you can then commit them to your git branch locally, and push them with git to GitHub to update the online GitHub Pages site (or follow the GitHub PR workflow, if you prefer).  Using git is outside the scope of this HOWTO, but lots of documentation and tutorial are available onine to learn git.
 
-Download and install [Quarto](https://quarto.org/docs/get-started/){target="_blank"} and a code editor of choice. Follow the instructions for previewing the website within your chosen code editor (*e.g.*, [VS Code](https://quarto.org/docs/get-started/hello/vscode.html){target="_blank"}).
+Download and install [Quarto](https://quarto.org/docs/get-started/) and a code editor of choice. Follow the instructions for previewing the website within your chosen code editor (*e.g.*, [VS Code](https://quarto.org/docs/get-started/hello/vscode.html)).
 
 Note that editing website content (*i.e.*, Markdown files) requires reloading the preview page to see the changes, while editing a configuration file (*i.e.*, yaml files) should trigger an automatic re-rendering of the website and updated preview.
 
