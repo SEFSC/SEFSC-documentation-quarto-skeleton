@@ -1,5 +1,5 @@
 ---
-title: "Updating the Website Theme"
+title: "Updating the Theme"
 subtitle: Syncing website theme and navbar with other SEFSC documentation pages
 order: 6
 ---
