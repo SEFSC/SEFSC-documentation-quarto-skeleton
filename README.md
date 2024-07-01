@@ -1,16 +1,16 @@
-# SEFSC-documentation-quarto-python-skeleton
+# SEFSC-documentation-quarto-skeleton
 
 A template/skeleton repository that can be used as a starting point to create a new SEFSC GitHub Documentation Site for deployment to [https://sefsc.github.io/](https://sefsc.github.io/).
 
 ### Getting Started
 
-See online documentation for working with this repository at: [https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/howto.html](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/howto.html)
+See online documentation for working with this repository at: [https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-skeleton/content/howto](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-skeleton/content/howto)
 
-*Delete the 'SEFSC-documentation-quarto-python-skeleton' heading above, delete this comment and the remaining text above, modify the remaining README content below to be relevant to your documentation site, and make sure to change the Quarto site configuration files according to the instructions in the HOWTO/documentation. Once your site content looks ready to go, it can be pushed to the [SEFSC GitHub Organization](https://github.com/sefsc) to be deployed.*
+*Delete the 'SEFSC-documentation-quarto-skeleton' heading above, delete this comment and the remaining text above, modify the remaining README content below to be relevant to your documentation site, and make sure to change the Quarto site configuration files according to the instructions in the HOWTO/documentation. Once your site content looks ready to go, it can be pushed to the [SEFSC GitHub Organization](https://github.com/sefsc) to be deployed.*
 
 # SEFSC Documentation Site: ___________
 
-**Site URL:** https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton or https://sefsc.github.io/SEFSC-documentation-quarto-python-skeleton
+**Site URL:** https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-skeleton or https://sefsc.github.io/SEFSC-documentation-quarto-skeleton
 
 ### Deploying site locally
 Requirements:
@@ -25,17 +25,17 @@ Requirements:
 
 Clone this repository:
 ```commandline
-git clone https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-python-skeleton.git
+git clone https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton.git
 ```
-Rename the resulting `SEFSC-documentation-quarto-python-skeleton` directory to a name of your choice, and follow further [Getting Started](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/setup.html) section in the HOWTO documentation.
+Rename the resulting `SEFSC-documentation-quarto-skeleton` directory to a name of your choice, and follow further [Getting Started](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-skeleton/content/howto/setup.html) section in the HOWTO documentation.
 
-Further instructions for modifying and configuring your site can be found in the  [Editing and configuring your documentation site](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/customizing.html) section of the HOWTO.
+Further instructions for modifying and configuring your site can be found in the  [Editing and configuring your documentation site](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-skeleton/content/howto/customizing.html) section of the HOWTO.
 
 #### Editing site content
 
 Make edits to the appropriate Markdown files in `contents/`. 
 
-More settings changes, including renaming the site URL to match your new repository name, should be made by editing the `_metadata.yml` file in the repository root. See the [Add Content](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-python-skeleton/content/howto/add-content.html) section of the HOWTO.
+More settings changes, including renaming the site URL to match your new repository name, should be made by editing the `_metadata.yml` file in the repository root. See the [Add Content](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-skeleton/content/howto/add-content.html) section of the HOWTO.
 
 ### Disclaimer
 
