@@ -1,6 +1,6 @@
 # SEFSC-documentation-quarto-skeleton
 
-A template/skeleton repository that can be used as a starting point to create a new SEFSC GitHub Documentation Site for deployment to [https://sefsc.github.io/](https://sefsc.github.io/).
+A template/skeleton repository that can be used as a starting point to create a new SEFSC GitHub Documentation Site for deployment to https://sefsc.github.io (landing page coming soon).
 
 ### Getting Started
 
@@ -10,13 +10,14 @@ See online documentation for working with this repository at: [https://mattgross
 
 # SEFSC Documentation Site: ___________
 
-**Site URL:** https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-skeleton or https://sefsc.github.io/SEFSC-documentation-quarto-skeleton
+**Site URL:** https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-skeleton 
 
 ### Deploying site locally
 Requirements:
-* Quarto
-* Python
-* Python packages (template demo only):
+
+- Quarto
+- Python
+- Python packages (template demo only):
   - matplotlib
   - numpy
   - markdown
