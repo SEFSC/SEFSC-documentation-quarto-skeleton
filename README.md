@@ -27,15 +27,15 @@ Clone this repository:
 ```commandline
 git clone https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton.git
 ```
-Rename the resulting `SEFSC-documentation-quarto-skeleton` directory to a name of your choice, and follow further [Getting Started](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-skeleton/content/howto/setup.html) section in the HOWTO documentation.
+Rename the resulting `SEFSC-documentation-quarto-skeleton` directory to a name of your choice, and follow further [Getting Started](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-skeleton/content/howto/setup) section in the HOWTO documentation.
 
-Further instructions for modifying and configuring your site can be found in the  [Editing and configuring your documentation site](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-skeleton/content/howto/customizing.html) section of the HOWTO.
+Further instructions for modifying and configuring your site can be found in the  [Editing and configuring your documentation site](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-skeleton/content/howto/customizing) section of the HOWTO.
 
 #### Editing site content
 
 Make edits to the appropriate Markdown files in `contents/`. 
 
-More settings changes, including renaming the site URL to match your new repository name, should be made by editing the `_metadata.yml` file in the repository root. See the [Add Content](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-skeleton/content/howto/add-content.html) section of the HOWTO.
+More settings changes, including renaming the site URL to match your new repository name, should be made by editing the `_metadata.yml` file in the repository root. See the [Add Content](https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-skeleton/content/howto/add-content) section of the HOWTO.
 
 ### Disclaimer
 
