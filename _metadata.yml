@@ -1,4 +1,4 @@
 website: 
   title: "App Name Documentation"
-  site-url: "https://mattgrossi-noaa.github.io/SEFSC-documentation-quarto-skeleton" 
-  repo-url: "https://github.com/MattGrossi-NOAA/SEFSC-documentation-quarto-skeleton"
+  site-url: "https://sefsc.github.io/SEFSC-documentation-quarto-skeleton" 
+  repo-url: "https://github.com/SEFSC/SEFSC-documentation-quarto-skeleton"
