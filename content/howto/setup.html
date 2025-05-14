@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.30">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -73,9 +73,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-2b3e328b71be8d25427581baeb23079b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-7666f061726abea502fb85a2fcf229f2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -503,7 +503,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#step-1a-use-the-sefsc-documentation-quarto-skeleton-template-to-create-your-own-forked-repository" id="toc-step-1a-use-the-sefsc-documentation-quarto-skeleton-template-to-create-your-own-forked-repository" class="nav-link active" data-scroll-target="#step-1a-use-the-sefsc-documentation-quarto-skeleton-template-to-create-your-own-forked-repository">Step 1a: Use the SEFSC-documentation-quarto-skeleton template to create your own forked repository</a></li>
-  <li><a href="#step-1b-add-a-new-orphan-branch-to-an-existing-repository" id="toc-step-1b-add-a-new-orphan-branch-to-an-existing-repository" class="nav-link" data-scroll-target="#step-1b-add-a-new-orphan-branch-to-an-existing-repository">Step 1b: Add a new orphan branch to an existing repository</a></li>
+  <li><a href="#step-1b-add-sefsc-documentation-quarto-skeleton-to-an-existing-repository" id="toc-step-1b-add-sefsc-documentation-quarto-skeleton-to-an-existing-repository" class="nav-link" data-scroll-target="#step-1b-add-sefsc-documentation-quarto-skeleton-to-an-existing-repository">Step 1b: Add SEFSC-documentation-quarto-skeleton to an existing repository</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/SEFSC/SEFSC-documentation-quarto-skeleton/blob/docs/content/howto/setup.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/SEFSC/SEFSC-documentation-quarto-skeleton/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -545,13 +545,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img width="335" alt="image" src="https://ioos.github.io/clone.png"></p></li>
 </ol>
 </section>
-<section id="step-1b-add-a-new-orphan-branch-to-an-existing-repository" class="level3">
-<h3 class="anchored" data-anchor-id="step-1b-add-a-new-orphan-branch-to-an-existing-repository">Step 1b: Add a new orphan branch to an existing repository</h3>
-<p>An <em>orphan branch</em> in GitHub is a branch whose commit history is independent of all other branches in the repo. This is useful for GitHub Pages because we can keep the website files separate from any project code and can work on either the website or the project code independently from each other. GitHub Pages are customarily saved in branches named “gh-pages”, and this repo uses a <code>docs</code> branch for the website files. We need need to create both of these in the existing rep. Start with the <code>gh-pages</code> branch, and then repeat for <code>docs</code>.</p>
+<section id="step-1b-add-sefsc-documentation-quarto-skeleton-to-an-existing-repository" class="level3">
+<h3 class="anchored" data-anchor-id="step-1b-add-sefsc-documentation-quarto-skeleton-to-an-existing-repository">Step 1b: Add SEFSC-documentation-quarto-skeleton to an existing repository</h3>
+<p>This is slightly more involved, but the overall workflow is as follows: We will create two new orphan branches in the existing repository, a <code>gh-pages</code> branch from which to deploy the site, and a <code>docs</code> branch to house the website files. (An <em>orphan branch</em> in GitHub is a branch whose commit history is independent of all other branches in the repo. This is useful for GitHub Pages because we can keep the website files separate from any project code and can work on either the website or the project code independently from each other.) We will then clone the <code>docs</code> branch only from the <a href="https://github.com/SEFSC/SEFSC-documentation-quarto-skeleton" target="_blank">SEFSC-documentation-quarto</a> repo, activate GitHub Pages, and push the new branches to the remote repo.</p>
 <ol type="1">
-<li><p>Navigate to your local copy of the repository</p></li>
-<li><p>Create a new orphan branch and remove the git commit history that is automatically generated.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">--orphan</span> gh-pages</span>
+<li><p>Navigate to your local copy of the repository.</p></li>
+<li><p><a href="https://stackoverflow.com/questions/34100048/create-empty-branch-on-github" target="_blank">Create a new <code>gh-pages</code> orphan branch</a> and remove the git commit history that is automatically generated.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch <span class="at">--orphan</span> gh-pages</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> rm <span class="at">-rf</span> .</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> .gitignore</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -567,10 +567,15 @@ Note
 <p>There may or may not be a <code>.gitignore</code> file to delete. If not, do not worry.</p>
 </div>
 </div></li>
+<li><p>Commit and push the new branch to the remote repo:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">--allow-empty</span> <span class="at">-m</span> <span class="st">"Initial commit on new orphan branch"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Now create a new <code>docs</code> branch to house the documentation files. We’ll create this as an orphan branch as well because its commit history is independent of any other branch in the repo.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch <span class="at">--orphan</span> docs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>We need to temporarily set the remote origin to the SEFSC documentation repo. First, note the existing remote origin URL so that we can restore it later. It can be retrieved with the command:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote <span class="at">-v</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote <span class="at">-v</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Then change the remote URL to the documentation repo:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote set-url origin https://github.com/SEFSC/SEFSC-documentation-quarto-skeleton.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote set-url origin https://github.com/SEFSC/SEFSC-documentation-quarto-skeleton.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -584,16 +589,14 @@ Note
 <p>To find this new URL, navigate to the <a href="https://github.com/SEFSC/SEFSC-documentation-quarto-skeleton" target="_blank" rel="noopener">SEFSC-documentation-quarto-skeleton</a> repo in a web browser and click on the green “&lt; &gt; Code” button.</p>
 </div>
 </div></li>
-<li><p>Make sure you’re on your <em>local</em> <code>gh-pages</code> branch and then pull the contents of the <code>gh-pages</code> branch of <em>SEFSC-documentation-quarto-skeleton</em> repo</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout gh-pages</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<li><p>Make sure you’re on your <em>local</em> <code>doc</code> branch and then pull the contents of the <code>docs</code> branch of <em>SEFSC-documentation-quarto-skeleton</em> repo:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout docs</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin docs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Use <code>ls -la</code> to verify that you now have all of the files and directories from the skeleton repo.</p></li>
 <li><p>Change the local remote origin back to the original repo</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote set-url origin <span class="op">&lt;</span>old-url<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote set-url origin <span class="op">&lt;</span>old-url<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>where <code>&lt;old-url&gt;</code> is the URL of the original repo retrieved in <a href="#step-1b-add-a-new-orphan-branch-to-an-existing-repository" target="_blank">Step 1b</a>.3.</p></li>
-<li><p>Push this new branch to the remote repo</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>In a web browser, navigate to the repo to which you just added a <code>gh-pages</code> branch. Click the “Settings” tab, then “Pages” on left sidebar.</p></li>
+<li><p>In a web browser, navigate to the repo to which you just added the <code>gh-pages</code> and <code>docs</code> branches. Click the “Settings” tab, then “Pages” on left sidebar.</p></li>
 <li><p>In the “Build and deployment” section, under “Source”, select “Deploy from branch” from the dropdown menu.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -608,13 +611,30 @@ Note
 <p>If your repo belongs to you (as opposed to belonging to an organization), it must be a public repo for this be available.</p>
 </div>
 </div></li>
-<li><p>Under “Branch”, select “gh-pages” from the dropdown menu. Leave the directory as “/(root)” and click “Save”.</p>
-<p><img width="540" alt="image" src="https://user-images.githubusercontent.com/2545978/196808262-3d2262be-b9b5-4897-bba5-fc2f056dd335.png"></p></li>
+<li><p>Under “Branch”, select “gh-pages” from the dropdown menu. Leave the directory as “/(root)” and click “Save”.</p></li>
+</ol>
+<p><img width="540" alt="image" src="https://user-images.githubusercontent.com/2545978/196808262-3d2262be-b9b5-4897-bba5-fc2f056dd335.png"></p>
+<ol start="11" type="1">
 <li><p>While still within “Settings”, click “Actions” on the left sidebar, then “General”.</p></li>
 <li><p>Under “Workflow permissions”, select “Read and write permissions” to allow GitHub Actions to modify the repository, then click “Save”.</p>
 <p><img width="719" alt="image" src="https://user-images.githubusercontent.com/2545978/196808404-0c075fcf-db03-4516-88dd-3143b9fca475.png"></p></li>
-<li><p>At the top of this page, you should see a banner saying “Your site is now live at…” with the URL of your documentation page. Launch the page to be sure. It should look exactly like the <a href="https://sefsc.github.io/SEFSC-documentation-quarto-skeleton/" target="_blank">SEFSC-documentation-quarto-skeleton page</a> but with a URL pointing to your project.</p></li>
-<li><p>Repeat steps 1-6, replacing “gh-pages” with “docs” to create a <code>docs</code> branch for the website files.</p></li>
+<li><p>At the top of this page, you should see a banner saying “Your site is now live at…” with the URL of your documentation page. Note this URL.</p></li>
+<li><p>Back on your local computer, push the new <code>docs</code> branch to the remote repo:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin docs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Allow a couple minutes for website to build and then launch the URL from the previous step to be sure. It should look exactly like the <a href="https://sefsc.github.io/SEFSC-documentation-quarto-skeleton/" target="_blank">SEFSC-documentation-quarto-skeleton page</a> but with a URL pointing to your project.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>GitHub Pages can take a few minutes to build and deploy, depending on how many pages need to be created. This is done automatically using GitHub Actions when changes are pushed to the <code>docs</code> branch. On the repo landing page, switch to the <code>docs</code> branch. The header of the panel displaying the contents of the repo contains your GitHub username followed by the most recent commit message. A green check mark will appear next to these when the GitHub Actions have run successfully, indicating the page is ready to be viewed. A brown dot will appear while the scripts are running, and a red “X” indicates the scripts failed. You can click on any of these symbols to view the execution log.</p>
+</div>
+</div></li>
 </ol>
 <p>You should now have at least three local branches: the <code>gh-pages</code> and <code>docs</code> branches you just created, and whatever branch(es) you had originally (<em>e.g.</em>,<code>main</code>, <code>master</code>, <em>etc.</em>). Verify using <code>git branch --all</code>. Likewise, your remote repository should now have new <code>gh-pages</code> and <code>docs</code> branches as well as the original branches, and they should contain a copy of the SEFSC documentation template files and subdirectories.</p>
 <p>Use <code>git checkout &lt;branch-name&gt;</code> to switch between branches. Everything that follows involves this new <code>docs</code> branch.</p>
