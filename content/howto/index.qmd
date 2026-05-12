@@ -1,7 +1,7 @@
 ---
-title: "HOWTO: Using the SEFSC Quarto Theme"
+title: "Using the SEFSC Quarto Theme"
 subtitle: Creating your own documentation page using the SEFSC Quarto Theme
-order: 2
+order: 1
 ---
 
 The [SEFSC-documentation-quarto-skeleton](../../index.qmd) repository is a template, or "skeleton", starting point to create a new GitHub-based documentation site that uses the NOAA Fisheries Southeast Fisheries Science Center (SEFSC) [documentation-theme-quarto](https://github.com/SEFSC/documentation-theme-quarto) documentation format and functionality. This documentation theme is derived from the NOAA Fisheries Open Science [NOAA-quarto-simple-python](https://github.com/nmfs-opensci/NOAA-quarto-simple-python) repository and is inspired by the Integrated Ocean Observing System (IOOS) [documentation-theme-jekyll](https://github.com/ioos/documentation-theme-jekyll), which is used for all [https://ioos.github.io](https://ioos.github.io) sites.
